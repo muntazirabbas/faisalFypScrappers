@@ -13,6 +13,43 @@ kidsBrands = [{'url': 'https://www.breakout.com.pk//new-in-5', 'name': 'NEW IN'}
 brand_count = 0
 scrapeUrl = ""
 
+
+def goToProductDetail(_productData,productUrl):
+    #get colors and size of product
+    print('product url ', productUrl)
+    driver.get(productUrl)
+    soup = BeautifulSoup(driver.page_source, 'lxml')
+    # print("detail soup ",soup)
+    sizeDiv = soup.findAll('ul', attrs={'class' : 'sbOptions'})[1].findAll('li', attrs={'class' : 'addsize'})[1:]
+    colorDiv = soup.find('ul', attrs={'class' : 'option-list color-squares'}).findAll('span', attrs={'class' : 'color-container'})
+    pictures = []
+    colors = []
+    size = []
+
+    for _size in sizeDiv:
+        if(_size):
+            # print('size => ',_size.text)
+            size.append(_size.text)
+    for color in colorDiv:
+        if(color):
+            # print('color => ',color['title'])
+            colors.append(color['title'])
+    if(soup.find('div', attrs={'class': 'gallery picture'}).findAll('img')):
+        pictureDiv = soup.find('div', attrs={'class': 'gallery picture'}).findAll('img')
+        for pic in pictureDiv:
+            if (pic):
+                # print('pic____',pic['src'])
+                pictures.append(pic['src'])
+
+    _productData['colors'] = colors
+    _productData['size'] = size
+    _productData['pictures'] = pictures
+    print('product data ', _productData)
+    # print("sizeDiv ______________", sizeDiv)
+    # print("colorDiv______________", colorDiv)
+    print('................................................................................................')
+
+
 def openSitePage(menBrands, gender):
     print("menBrands " , menBrands)
     for sitePage in menBrands:
@@ -29,60 +66,50 @@ def processSitePageSoup(soup, brandName,gender):
             # print("product======>>>>",product.find('div',{'class':'details'}))
             title = product.find('div',{'class':'details'}).findAll('a')[0].text
             buyUrl = 'https://www.breakout.com.pk'+product.find('div',{'class':'details'}).findAll('a')[0]['href']
-            price = 0
+            priceNew = 0
+            priceOld = 0
             if (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[1]):
-                price = (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[1]).text
-            imageURL = product.find('div',{'class':'picture'}).find('img')['src']
-            print("Type = ", gender)
-            print("Brand = ", brandName)
-            print("Title = ", title)
-            print("Buy URL = ",  buyUrl)
-            print("Price = ", price[:-5])
-            print("Date = ", date.today())
-            print('img = ', imageURL)
-            # jsonData.append({
-            #     'name': title,
-            #     'buyUrl': 'https://www.breakout.com.pk' +buyUrl,
-            #     'price': price,
-            #     'Type': type,
-            #     'subType': brandName,
-            #     'date': date.today(),
-            #     'image': imageURL
-            # })
-            colors = ["black", "gray", "red", "pink", "white", "green", "blue"]
-            size = random.choice(
-                [
-                    ['100 CM', '90 CM', '95 CM'],
-                    ['M', 'L', 'XL'],
-                    ['XS', 'S', '2T'],
-                    ['3T', '4T', '7'],
-                    ['8', '9']
-                ])
-            mainBrands = ['bonanza', 'outfitters', 'breakout', 'khaadi', 'engine', 'gulahmed', 'junaidjamshed', 'levi']
-            dataObject = {
+                priceOld = (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[0]).text
+                priceNew = (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[1]).text
+            # imageURL = product.find('div',{'class':'picture'}).findAll('img')['src']
+            # print("Type = ", gender)
+            # print("Brand = ", brandName)
+            # print("Title = ", title)
+            # print("Buy URL = ",  buyUrl)
+            # print("Price = ", price[:-5])
+            # print("Date = ", date.today())
+            # print('img = ', imageURL)
+            #Required attributes#
+            # Gender
+            # Category
+            # Price
+            # Color
+            # Size
+            # Review
+            productData = {
                 "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
                 'name': title,
-                'pictures': [imageURL],
-                'stock': random.choice(list(range(10, 400))),
-                'price': int(price[:-5].strip().replace(',', '')),
-                'discount': random.choice(list(range(0, 100))),
-                'salePrice': int(price[:-5].strip().replace(',', '')) + random.choice([0, 300]),
+                'pictures': [],
+                'stock': 0,
+                'price': int(priceNew[:-5].strip().replace(',', '')),
+                'discount': int(priceOld[:-5].strip().replace(',', '')) - int(priceNew[:-5].strip().replace(',', '')),
+                'salePrice': int(priceOld[:-5].strip().replace(',', '')),
                 'description': '',
                 'tags': [gender, brandName],
-                'rating': random.choice(list(range(0, 5))),
+                'rating': random.choice(list(range(3, 5))),
                 'category': gender,
-                'colors': [random.choice(colors), random.choice(colors), random.choice(colors)],
-                'size': size,
+                'colors': [],
+                'size': [],
                 'buyUrl': buyUrl,
                 'gender': gender,
                 'brand': brandName,
                 'date': datetime.today(),
                 'mainBrand': 'breakout'
-                # 'mainBrand': random.choice(mainBrands)
             }
-            # jsonData.append(dataObject)
-            print("data________", dataObject)
-            # mydb.productslist.insert_one(dataObject)
+            # print("data________", productData)
+            #openProductDetail => get colors and sizes
+            goToProductDetail(productData,buyUrl)
+            # mydb.productslist.insert_one(productData)
             print('...........................................................................................')
 
 print('starting scrapping')

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d15581-9c00-4cf0-8814-afc626dadfc5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/breakoutScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/breakoutScrapping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engineScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/engineScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ideasGulAhmedScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/ideasGulAhmedScraping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khaadiScraping1.py" beforeDir="false" afterPath="$PROJECT_DIR$/khaadiScraping1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,18 +13,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$khaadiScraping1.coverage" NAME="khaadiScraping1 Coverage Results" MODIFIED="1583170177649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$khaadiScraping1.coverage" NAME="khaadiScraping1 Coverage Results" MODIFIED="1584012119347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$bonanzaScraping.coverage" NAME="bonanzaScraping Coverage Results" MODIFIED="1583147300019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$breakoutScrapping.coverage" NAME="breakoutScrapping Coverage Results" MODIFIED="1583146989063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$engineScrapping.coverage" NAME="engineScrapping Coverage Results" MODIFIED="1583169966246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$breakoutScrapping.coverage" NAME="breakoutScrapping Coverage Results" MODIFIED="1584018049477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$engineScrapping.coverage" NAME="engineScrapping Coverage Results" MODIFIED="1584019269825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$ideasGulAhmedScraping.coverage" NAME="ideasGulAhmedScraping Coverage Results" MODIFIED="1583169926079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$outfittersScraping.coverage" NAME="outfittersScraping Coverage Results" MODIFIED="1583146900257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-195595169">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="2" />
@@ -53,75 +67,56 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1186774023">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="1316" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1316" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bonanzaScraping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442">
-              <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-                <marker date="1583150238817" expanded="true" signature="3195:5827" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/breakoutScrapping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="153">
+              <caret line="86" column="18" lean-forward="true" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+                <marker date="1584018049300" expanded="true" signature="3753:3758" ph="..." />
+                <marker date="1584018049300" expanded="true" signature="3753:5161" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outfittersScraping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-end-line="87" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/khaadiScraping1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-476">
-              <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1583170303234" expanded="true" signature="4925:7309" ph="..." />
-                <marker date="1583170303234" expanded="true" signature="7781:7821" ph="..." />
-                <marker date="1583170303234" expanded="true" signature="8531:8787" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ideasGulAhmedScraping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/engineScrapping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="68" column="66" lean-forward="true" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+            <state relative-caret-position="153">
+              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -141,6 +136,8 @@
       <find>openSitePage</find>
       <find>grid__item small--one-half medium-up--one-fifth</find>
       <find>https://www.khaadi.com/pk</find>
+      <find>att</find>
+      <find>sbOptions</find>
     </findStrings>
     <replaceStrings>
       <replace>https://pk.khaadi.com/</replace>
@@ -154,11 +151,11 @@
       <list>
         <option value="$PROJECT_DIR$/../uni_rank.py" />
         <option value="$PROJECT_DIR$/outfittersScraping.py" />
-        <option value="$PROJECT_DIR$/breakoutScrapping.py" />
         <option value="$PROJECT_DIR$/bonanzaScraping.py" />
         <option value="$PROJECT_DIR$/ideasGulAhmedScraping.py" />
-        <option value="$PROJECT_DIR$/engineScrapping.py" />
         <option value="$PROJECT_DIR$/khaadiScraping1.py" />
+        <option value="$PROJECT_DIR$/breakoutScrapping.py" />
+        <option value="$PROJECT_DIR$/engineScrapping.py" />
       </list>
     </option>
   </component>
@@ -168,7 +165,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="944" />
     <option name="height" value="860" />
   </component>
@@ -178,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,6 +186,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.khaadiScraping1">
+  <component name="RunManager" selected="Python.engineScrapping">
     <configuration name="bonanzaScraping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="zia_fyp_scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -331,11 +328,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.khaadiScraping1" />
         <item itemvalue="Python.engineScrapping" />
+        <item itemvalue="Python.breakoutScrapping" />
+        <item itemvalue="Python.khaadiScraping1" />
         <item itemvalue="Python.ideasGulAhmedScraping" />
         <item itemvalue="Python.bonanzaScraping" />
-        <item itemvalue="Python.breakoutScrapping" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +353,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26285347" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14138818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -376,7 +373,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32969153" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26285347" />
@@ -435,30 +432,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bonanzaScraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="72" lean-forward="true" selection-start-line="95" selection-start-column="72" selection-end-line="95" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/outfittersScraping.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="86" column="26" selection-start-line="86" selection-end-line="87" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khaadiScraping1.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-end-line="87" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/breakoutScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engineScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="68" column="66" lean-forward="true" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -472,26 +469,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/khaadiScraping1.py">
+    <entry file="file://$PROJECT_DIR$/breakoutScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        <state relative-caret-position="153">
+          <caret line="86" column="18" lean-forward="true" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1583170303234" expanded="true" signature="4925:7309" ph="..." />
-            <marker date="1583170303234" expanded="true" signature="7781:7821" ph="..." />
-            <marker date="1583170303234" expanded="true" signature="8531:8787" ph="..." />
+            <marker date="1584018049300" expanded="true" signature="3753:3758" ph="..." />
+            <marker date="1584018049300" expanded="true" signature="3753:5161" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bonanzaScraping.py">
+    <entry file="file://$PROJECT_DIR$/engineScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
+        <state relative-caret-position="153">
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <marker date="1583150238817" expanded="true" signature="3195:5827" ph="..." />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

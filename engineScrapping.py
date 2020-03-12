@@ -10,6 +10,47 @@ menBrands = [{'url': 'https://www.engine.com.pk/collections/men-casual-shirts', 
 womenBrands = [{'url': 'https://www.engine.com.pk/collections/woven-top', 'name': 'Woven Tops'}, {'url': 'https://www.engine.com.pk/collections/women-kurties', 'name': 'Kurties'}, {'url': 'https://www.engine.com.pk/collections/women-bottoms', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/women-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/women-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/women-tights', 'name': 'Tights'}, {'url': 'https://www.engine.com.pk/collections/women-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}, {'url': 'https://www.engine.com.pk/collections/women-sweaters', 'name': 'Sweaters'}, {'url': 'https://www.engine.com.pk/collections/ladies-jacket', 'name': 'Jackets'}, {'url': 'https://www.engine.com.pk/collections/women-sleepwear', 'name': 'Sleepwear'}, {'url': 'https://www.engine.com.pk/collections/women-footwear', 'name': 'Footwear'}]
 kidsBrands =[{'url': 'https://www.engine.com.pk/collections/t-shirt', 'name': 'T-Shirts'}, {'url': 'https://www.engine.com.pk/collections/boys-bottom', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/boys-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/boys-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/boys-shorts', 'name': 'Shorts'}, {'url': 'https://www.engine.com.pk/collections/boys-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}]
 
+
+
+
+def goToProductDetail(_productData,productUrl):
+    #get colors and size of product
+    print('product url ', productUrl)
+    driver.get(productUrl)
+    soup = BeautifulSoup(driver.page_source, 'lxml')
+    # print("detail soup ",soup)
+    sizeDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[0].findAll('option')
+    colorDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[1].findAll('option')
+    priceText = soup.find('span', attrs={'class': 'product-single__price'}).text
+
+    pictures = []
+    colors = []
+    size = []
+
+    for _size in sizeDiv:
+        if(_size):
+            # print('size => ',_size.text)
+            size.append(_size.text)
+    for color in colorDiv:
+        if(color):
+            # print('color => ',color['title'])
+            colors.append(color.text)
+    if(soup.find('div', attrs={'class': 'photos'}).findAll('img'))[1:]:
+        pictureDiv = soup.find('div', attrs={'class': 'photos'}).findAll('img')[1:]
+        for pic in pictureDiv:
+            if (pic):
+                # print('pic____',pic['src'])
+                pictures.append("https:"+pic['src'])
+
+    _productData['colors'] = colors
+    _productData['size'] = size
+    _productData['pictures'] = pictures
+    print('product data ', _productData)
+    # print("sizeDiv ______________", sizeDiv)
+    # print("colorDiv______________", colorDiv)
+    print('................................................................................................')
+
+
 def openSitePage(brandData, type):
     for sitePage in brandData:
         print('sitePage ', sitePage)
@@ -27,61 +68,31 @@ def processSitePageSoup(soup, brandName,gender):
             # print("product======>>>>",product)
             title = product.find('div',{'class':'product-card__name'}).text.strip()
             buyUrl = webUrl + product.findAll('a')[0]['href']
-            price = 0
-            if (product.find('s',{'class':'product-card__regular-price'})):
-                price = product.find('s',{'class':'product-card__regular-price'}).text.strip()[3:].replace(',', '')
-            imageUrl = ""
-            # print('img-src_____ ',product.find('img'))
-            try:
-                if(product.find('img')['data-srcset']):
-                    imageUrl = "https:" + product.find('img')['data-srcset'].rsplit(',', 1)[1].strip().replace(" ", "")
-                elif(product.find('img')['data-src']):
-                    imageUrl = "https:" + product.find('img')['data-src'].rsplit(',', 1)[1].strip().replace(" ", "")
-                else:
-                    imageUrl = ""
-            except Exception as el:
-                print("")
 
-            print('imageUri ', imageUrl)
-            # print("Type = ", gender)
-            # print("Brand = ", brandName)
-            # print("Title = ", title)
-            # print("Buy URL = ", buyUrl)
-            print("Price = ", price)
-            colors = ["black", "gray", "red", "pink", "white", "green", "blue"]
-            size = random.choice(
-                [
-                    ['100 CM', '90 CM', '95 CM'],
-                    ['M', 'L', 'XL'],
-                    ['XS', 'S', '2T'],
-                    ['3T', '4T', '7'],
-                    ['8', '9']
-                ])
-            mainBrands = ['bonanza', 'outfitters', 'breakout', 'khaadi', 'engine', 'gulahmed']
             dataObject = {
-                "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(
-                    list(range(55, 5000))),
+                "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
                 'name': title,
-                'pictures': [imageUrl],
-                'stock': random.choice(list(range(10, 400))),
-                'price': int(price),
-                'discount': random.choice(list(range(0, 100))),
-                'salePrice': int(price) + random.choice([0, 300]),
+                'pictures': [],
+                'stock': 'N/A',
+                'price': 0,
+                'discount': 0,
+                'salePrice': 0,
                 'description': '',
                 'tags': [gender, brandName],
-                'rating': random.choice(list(range(0, 5))),
+                'rating': 'N/A',
                 'category': gender,
-                'colors': [random.choice(colors), random.choice(colors), random.choice(colors)],
-                'size': size,
+                'colors': [],
+                'size': [],
                 'buyUrl': buyUrl,
                 'gender': gender,
                 'brand': brandName,
                 'date': datetime.today(),
                 'mainBrand': 'engine'
             }
-            print('data_____',dataObject)
-            if(dataObject['pictures'][0] != ""):
-                mydb.products.insert_one(dataObject)
+            # print('data_____',dataObject)
+            # if(dataObject['pictures'][0] != ""):
+            #     mydb.products.insert_one(dataObject)
+            goToProductDetail(dataObject,buyUrl)
             print('...........................................................................................')
 
 print('starting scrapping')
