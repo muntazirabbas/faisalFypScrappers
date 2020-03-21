@@ -12,7 +12,6 @@ kidsBrands =[{'url': 'https://www.engine.com.pk/collections/t-shirt', 'name': 'T
 
 
 
-
 def goToProductDetail(_productData,productUrl):
     #get colors and size of product
     print('product url ', productUrl)
@@ -21,8 +20,8 @@ def goToProductDetail(_productData,productUrl):
     # print("detail soup ",soup)
     sizeDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[0].findAll('option')
     colorDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[1].findAll('option')
-    priceText = soup.find('span', attrs={'class': 'product-single__price'}).text
-
+    price = soup.find('span', attrs={'class': 'product-single__price'}).text.strip()[3:-3]
+    print('price__',price)
     pictures = []
     colors = []
     size = []
@@ -34,7 +33,7 @@ def goToProductDetail(_productData,productUrl):
     for color in colorDiv:
         if(color):
             # print('color => ',color['title'])
-            colors.append(color.text)
+            colors.append(color.text.strip().lower())
     if(soup.find('div', attrs={'class': 'photos'}).findAll('img'))[1:]:
         pictureDiv = soup.find('div', attrs={'class': 'photos'}).findAll('img')[1:]
         for pic in pictureDiv:
@@ -45,9 +44,8 @@ def goToProductDetail(_productData,productUrl):
     _productData['colors'] = colors
     _productData['size'] = size
     _productData['pictures'] = pictures
+    _productData['price'] = price
     print('product data ', _productData)
-    # print("sizeDiv ______________", sizeDiv)
-    # print("colorDiv______________", colorDiv)
     print('................................................................................................')
 
 
@@ -72,9 +70,9 @@ def processSitePageSoup(soup, brandName,gender):
             dataObject = {
                 "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
                 'name': title,
+                'price': 0,
                 'pictures': [],
                 'stock': 'N/A',
-                'price': 0,
                 'discount': 0,
                 'salePrice': 0,
                 'description': '',
