@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d15581-9c00-4cf0-8814-afc626dadfc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/furorjeansScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonanzaScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/bonanzaScraping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engineScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/engineScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ideasGulAhmedScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/ideasGulAhmedScraping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khaadiScraping1.py" beforeDir="false" afterPath="$PROJECT_DIR$/khaadiScraping1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outfittersScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/outfittersScraping.py" afterDir="false" />
-    </list>
+    <list default="true" id="32d15581-9c00-4cf0-8814-afc626dadfc5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +67,7 @@
     <session id="-1186774023">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.opened" value="2" />
@@ -446,16 +438,16 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33916554" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33916554" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32974428" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
