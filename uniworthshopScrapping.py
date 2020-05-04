@@ -77,7 +77,7 @@ def processSitePageSoup(soup, brandName,gender):
                 'gender': gender,
                 'brand': brandName,
                 'date': datetime.today(),
-                'mainBrand': 'engine'
+                'mainBrand': 'uniworthshop'
             }
             # print('data_____',dataObject)
             # if(dataObject['pictures'][0] != ""):

@@ -20,18 +20,20 @@ colorsArray = []
 
 
 def colorAssignment(color):
-    if "BLK" in color:
-        return "Black"
-    elif "BLU" in color:
-        return "Blue"
-    elif "WHT" in color:
-        return "White"
-    elif "RED" in color:
-        return "Red"
-    elif "GRN" in color:
-        return "Green"
+    if "black" in color:
+        return "black"
+    elif "blue" in color:
+        return "blue"
+    elif "white" in color:
+        return "white"
+    elif "red" in color:
+        return "red"
+    elif "green" in color:
+        return "green"
+    elif "navy" in color:
+        return "navy"
     else:
-        return "Others"
+        return "other"
 
 def goToProductDetail(_productData,productUrl):
     #get colors and size of product
