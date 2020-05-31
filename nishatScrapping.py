@@ -2,9 +2,7 @@ import requests
 import random
 from datetime import datetime
 import requests
-from bs4 import BeautifulSoup
 import pymongo
-from selenium import webdriver
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["fypDb"]
 from bs4 import BeautifulSoup
@@ -58,7 +56,7 @@ while(type_temp < len(type_array)):
                 'mainBrand': 'nishat'
             }
             print(dataObject)
-            mydb.products.insert_one(dataObject)
+            # mydb.products.insert_one(dataObject)
         pagecount -=1
 
     type_temp += 1
