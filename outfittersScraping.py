@@ -68,6 +68,7 @@ def goToProductDetail(_productData,productUrl):
     _productData['colors'] = colors
     _productData['size'] = size
     _productData['pictures'] = pictures
+    # mydb.products.insert_one(_productData)
     print('product data ', _productData)
     print('................................................................................................')
 
@@ -82,8 +83,10 @@ def openSitePage(brandData, type):
 def processSitePageSoup(soup, brandName,gender):
     _mainUrl = "https://www.engine.com.pk"
     for outFitters in soup.select('div[class*="no_crop_image"]'):
+
            buyUrl = "https://outfitters.com.pk"+outFitters.find('a')['href'].strip()
            title = outFitters.find('img')['alt'].strip()
+           print('title ', title)
            price = outFitters.find('span', {'class': 'money'}).text.strip()
            dataObject = {
                "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
@@ -105,6 +108,7 @@ def processSitePageSoup(soup, brandName,gender):
                'date': datetime.today(),
                'mainBrand': 'outfitters'
                }
+           print('product ', dataObject)
            # mydb.products.insert_one(dataObject)
            goToProductDetail(dataObject,buyUrl)
            print('...........................................................................................')

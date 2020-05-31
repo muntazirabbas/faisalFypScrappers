@@ -2,11 +2,11 @@ import random
 from datetime import datetime
 from bs4 import BeautifulSoup
 import pymongo
-# myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-# mydb = myclient["fypDb"]
 from selenium import webdriver
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["fypDb"]
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
-menBrands =  [{'url': 'https://monark.com.pk/collections/new-arrivals', 'name': 'New Arrivals'}, {'url': 'https://monark.com.pk/collections/formals', 'name': 'Formals'}, {'url': 'https://monark.com.pk/collections/formals', 'name': 'Formals'}, {'url': 'https://monark.com.pk/collections/suits', 'name': 'Suits'}, {'url': 'https://monark.com.pk/collections/blazers', 'name': 'Blazers'}, {'url': 'https://monark.com.pk/collections/formal-shirts', 'name': 'Formal Shirts'}, {'url': 'https://monark.com.pk/collections/formal-pants', 'name': 'Formal Pants'}, {'url': 'https://monark.com.pk/collections/casuals', 'name': 'Casuals'}, {'url': 'https://monark.com.pk/collections/casuals', 'name': 'Casuals'}, {'url': 'https://monark.com.pk/collections/t-shirts', 'name': 'T-Shirts'}, {'url': 'https://monark.com.pk/collections/polo-shirts', 'name': 'Polo Shirts'}, {'url': 'https://monark.com.pk/collections/casual-shirts', 'name': 'Casual Shirts'}, {'url': 'https://monark.com.pk/collections/chinos-5-pockets', 'name': 'Chino & 5 Pockets'}, {'url': 'https://monark.com.pk/collections/jeans', 'name': 'Jeans'}, {'url': 'https://monark.com.pk/collections/joggers', 'name': 'Joggers'}, {'url': 'https://monark.com.pk/collections/shorts', 'name': 'Shorts'}, {'url': 'https://monark.com.pk/collections/made-in-turkey', 'name': 'Made In Turkey'}, {'url': 'https://monark.com.pk/collections/accessories', 'name': 'Accessories'}, {'url': 'https://monark.com.pk/collections/accessories', 'name': 'Accessories'}, {'url': 'https://monark.com.pk/collections/sun-glasses', 'name': 'Sun Glasses'}, {'url': 'https://monark.com.pk/collections/wallets', 'name': 'Wallets'}, {'url': 'https://monark.com.pk/collections/belts', 'name': 'Belts'}, {'url': 'https://monark.com.pk/collections/bags', 'name': 'Bags'}, {'url': 'https://monark.com.pk/collections/ties', 'name': 'Ties'}, {'url': 'https://monark.com.pk/collections/pocket-squares', 'name': 'Pockets Squares'}, {'url': 'https://monark.com.pk/collections/lapel-pins', 'name': 'Lapel Pins'}, {'url': 'https://monark.com.pk/collections/cufflinks', 'name': 'Cufflinks'}, {'url': 'https://monark.com.pk/collections/socks', 'name': 'Socks'}, {'url': 'https://monark.com.pk/collections/bracelets', 'name': 'Bracelets'}]
+menBrands =  [ {'url': 'https://monark.com.pk/collections/suits', 'name': 'Suits'}, {'url': 'https://monark.com.pk/collections/blazers', 'name': 'Blazers'}, {'url': 'https://monark.com.pk/collections/formal-shirts', 'name': 'Formal Shirts'}, {'url': 'https://monark.com.pk/collections/formal-pants', 'name': 'Formal Pants'}, {'url': 'https://monark.com.pk/collections/casuals', 'name': 'Casuals'}, {'url': 'https://monark.com.pk/collections/casuals', 'name': 'Casuals'}, {'url': 'https://monark.com.pk/collections/t-shirts', 'name': 'T-Shirts'}, {'url': 'https://monark.com.pk/collections/polo-shirts', 'name': 'Polo Shirts'}, {'url': 'https://monark.com.pk/collections/casual-shirts', 'name': 'Casual Shirts'}, {'url': 'https://monark.com.pk/collections/chinos-5-pockets', 'name': 'Chino & 5 Pockets'}, {'url': 'https://monark.com.pk/collections/jeans', 'name': 'Jeans'}, {'url': 'https://monark.com.pk/collections/joggers', 'name': 'Joggers'}, {'url': 'https://monark.com.pk/collections/shorts', 'name': 'Shorts'}, {'url': 'https://monark.com.pk/collections/made-in-turkey', 'name': 'Made In Turkey'}, {'url': 'https://monark.com.pk/collections/accessories', 'name': 'Accessories'}, {'url': 'https://monark.com.pk/collections/accessories', 'name': 'Accessories'}, {'url': 'https://monark.com.pk/collections/sun-glasses', 'name': 'Sun Glasses'}, {'url': 'https://monark.com.pk/collections/wallets', 'name': 'Wallets'}, {'url': 'https://monark.com.pk/collections/belts', 'name': 'Belts'}, {'url': 'https://monark.com.pk/collections/bags', 'name': 'Bags'}, {'url': 'https://monark.com.pk/collections/ties', 'name': 'Ties'}, {'url': 'https://monark.com.pk/collections/pocket-squares', 'name': 'Pockets Squares'}, {'url': 'https://monark.com.pk/collections/lapel-pins', 'name': 'Lapel Pins'}, {'url': 'https://monark.com.pk/collections/cufflinks', 'name': 'Cufflinks'}, {'url': 'https://monark.com.pk/collections/socks', 'name': 'Socks'}, {'url': 'https://monark.com.pk/collections/bracelets', 'name': 'Bracelets'},{'url': 'https://monark.com.pk/collections/new-arrivals', 'name': 'New Arrivals'}, {'url': 'https://monark.com.pk/collections/formals', 'name': 'Formals'}]
 #This site has only men's brands products
 
 def getColor(color):
@@ -32,14 +32,14 @@ def goToProductDetail(_productData,productUrl):
     driver.get(productUrl)
     soup = BeautifulSoup(driver.page_source, 'lxml')
     # print("detail soup ",soup)
-    sizeDiv = soup.find('div', attrs={'class' : 'product-options__section d-flex flex-wrap'})
     priceSpans = soup.find('span', attrs={'class': 'price price--sale'}).findAll('span')
     size = []
     price = 0
     # print('sizes ', sizeDiv)
-    for _size in sizeDiv.select('div[class*="product-options__value product-options__value--large-text d-flex flex-center border cursor-pointer"]'):
-            if(_size):
-                # print('size => ',_size)
+    if(soup.find('div', attrs={'class': 'product-options__section d-flex flex-wrap'})):
+        for _size in soup.find('div', attrs={'class': 'product-options__section d-flex flex-wrap'}).findAll('div'):
+            if(_size) and ('disabled' not in _size.attrs['class']):
+                # print('size => ', _size)
                 size.append(_size.text)
     if(priceSpans[1]):
         price = priceSpans[1].text.strip()
@@ -47,8 +47,8 @@ def goToProductDetail(_productData,productUrl):
         price = priceSpans[0].text.strip()
     _productData['size'] = size
     _productData['price'] = price[3:]
+    # mydb.products.insert_one(_productData)
     print('product data ', _productData)
-    print('................................................................................................')
 
 def openSitePage(brandData, type):
     for sitePage in brandData:
@@ -92,10 +92,7 @@ def processSitePageSoup(soup, brandName,gender):
                 'mainBrand': 'monark'
             }
             # print('data_____',dataObject)
-            # if(dataObject['pictures'][0] != ""):
-            #     mydb.products.insert_one(dataObject)
             goToProductDetail(dataObject,buyUrl)
-            print('...........................................................................................')
 
 print('starting scrapping')
 

@@ -7,9 +7,10 @@ myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["fypDb"]
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
 from datetime import date
-menBrands =  [{'url': 'https://www.breakout.com.pk//stranger-things-collection', 'name': 'STRANGER THINGS COLLECTION'}, {'url': 'https://www.breakout.com.pk//new-in', 'name': 'NEW IN'}, {'url': 'https://www.breakout.com.pk//tees', 'name': 'TEES'}, {'url': 'https://www.breakout.com.pk//polos', 'name': 'POLOS'}, {'url': 'https://www.breakout.com.pk//shirts-2', 'name': 'Shirts'}, {'url': 'https://www.breakout.com.pk//denim', 'name': 'Denim'}, {'url': 'https://www.breakout.com.pk//non-denim', 'name': 'TROUSERS / CHINOS'}, {'url': 'https://www.breakout.com.pk//joggers', 'name': 'JOGGERS'}, {'url': 'https://www.breakout.com.pk//sweater-3', 'name': 'Sweaters'}, {'url': 'https://www.breakout.com.pk//coat-4', 'name': 'Coats/Blazers'}, {'url': 'https://www.breakout.com.pk//upper-3', 'name': 'Sweatshirts / hoodies'}, {'url': 'https://www.breakout.com.pk//jacket-3', 'name': 'Jackets'}, {'url': 'https://www.breakout.com.pk//shoes-2', 'name': 'Shoes'}, {'url': 'https://www.breakout.com.pk//bags-3', 'name': 'BAGS'}, {'url': 'https://www.breakout.com.pk//belts', 'name': 'BELTS'}, {'url': 'https://www.breakout.com.pk//wallets', 'name': 'WALLETS'}, {'url': 'https://www.breakout.com.pk//perfumes', 'name': 'PERFUMES'}]
-womenBrands = [{'url': 'https://www.breakout.com.pk//stranger-things-collection-2', 'name': 'STRANGER THINGS COLLECTION'}, {'url': 'https://www.breakout.com.pk//new-in-2', 'name': 'NEW IN'}, {'url': 'https://www.breakout.com.pk//tops-3', 'name': 'Tops'}, {'url': 'https://www.breakout.com.pk//shirts-7', 'name': 'Shirts'}, {'url': 'https://www.breakout.com.pk//bottom', 'name': 'Denim and trousers'}, {'url': 'https://www.breakout.com.pk//shawls-2', 'name': 'Shawls/Capes'}, {'url': 'https://www.breakout.com.pk//sweater-4', 'name': 'Sweaters'}, {'url': 'https://www.breakout.com.pk//upper-4', 'name': 'Uppers / Sweatshirts'}, {'url': 'https://www.breakout.com.pk//jacket-4', 'name': 'Jackets'}, {'url': 'https://www.breakout.com.pk//shoes', 'name': 'Shoes'}, {'url': 'https://www.breakout.com.pk//bags-4', 'name': 'BAGS'}, {'url': 'https://www.breakout.com.pk//scarves', 'name': 'SCARVES'}, {'url': 'https://www.breakout.com.pk//perfumes-2', 'name': 'PERFUMES'}]
-kidsBrands = [{'url': 'https://www.breakout.com.pk//new-in-5', 'name': 'NEW IN'}, {'url': 'https://www.breakout.com.pk//tees-5', 'name': 'Tees'}, {'url': 'https://www.breakout.com.pk//tops-4', 'name': 'Tops'}, {'url': 'https://www.breakout.com.pk//sweaters-3', 'name': 'Sweaters'}, {'url': 'https://www.breakout.com.pk//jackets-3', 'name': 'Jackets'}, {'url': 'https://www.breakout.com.pk//uppers-3', 'name': 'Uppers'}, {'url': 'https://www.breakout.com.pk//bottoms-5', 'name': 'Bottoms'}, {'url': 'https://www.breakout.com.pk//accessories-shoes-3', 'name': 'Accessories & Shoes'},{'url': 'https://www.breakout.com.pk//new-in-6', 'name': 'NEW IN'}, {'url': 'https://www.breakout.com.pk//tees-6', 'name': 'Tees'}, {'url': 'https://www.breakout.com.pk//tops-5', 'name': 'Tops'}, {'url': 'https://www.breakout.com.pk//sweaters-4', 'name': 'Sweaters'}, {'url': 'https://www.breakout.com.pk//jackets-4', 'name': 'Jackets'}, {'url': 'https://www.breakout.com.pk//uppers-4', 'name': 'Uppers'}, {'url': 'https://www.breakout.com.pk//bottoms-6', 'name': 'Bottoms'}, {'url': 'https://www.breakout.com.pk//accessories-shoes-4', 'name': 'Accessories & Shoes'}]
+menBrands = [{'url': 'https://breakout.com.pk/collections/men-new-in', 'name': 'NEW IN'}, {'url': 'https://breakout.com.pk/collections/men-tees', 'name': 'Tees'}, {'url': 'https://breakout.com.pk/collections/men-polos', 'name': 'Polos'}, {'url': 'https://breakout.com.pk/collections/men-shirts', 'name': 'Shirts'}, {'url': 'https://breakout.com.pk/collections/denim', 'name': 'Denim'}, {'url': 'https://breakout.com.pk/collections/men-trouser-chinos', 'name': 'Trouser / Chinos'}, {'url': 'https://breakout.com.pk/collections/men-shorts', 'name': 'Shorts'}, {'url': 'https://breakout.com.pk/collections/men-joggers', 'name': 'Joggers'}, {'url': 'https://breakout.com.pk/collections/men-bags', 'name': 'Bags'}, {'url': 'https://breakout.com.pk/collections/men-shoes', 'name': 'Shoes'}, {'url': 'https://breakout.com.pk/collections/men-belts', 'name': 'Belts'}, {'url': 'https://breakout.com.pk/collections/men-wallets', 'name': 'Wallets'}, {'url': 'https://breakout.com.pk/collections/men-perfumes', 'name': 'Perfumes'}, {'url': 'https://breakout.com.pk/collections/men_glasses', 'name': 'Glasses'}, {'url': 'https://breakout.com.pk/collections/men_underwears', 'name': 'Underwear'}, {'url': 'https://breakout.com.pk/collections/men_watches', 'name': 'Watches'}, {'url': 'https://breakout.com.pk/collections/men_caps', 'name': 'Caps & Hats'}]
+womenBrands = [{'url': 'https://breakout.com.pk/collections/women-new-in', 'name': 'NEW IN'}, {'url': 'https://breakout.com.pk/collections/women-tops', 'name': 'Tops'}, {'url': 'https://breakout.com.pk/collections/women-shirts', 'name': 'Shirts'}, {'url': 'https://breakout.com.pk/collections/women-denim-and-trousers', 'name': 'Denim And Trousers'}, {'url': 'https://breakout.com.pk/collections/women-bags', 'name': 'Bags'}, {'url': 'https://breakout.com.pk/collections/women-shoes', 'name': 'Shoes'}, {'url': 'https://breakout.com.pk/collections/women-scarves', 'name': 'Scarves'}, {'url': 'https://breakout.com.pk/collections/women-perfumes', 'name': 'Perfumes'}, {'url': 'https://breakout.com.pk/collections/women_glasses', 'name': 'Glasses'}, {'url': 'https://breakout.com.pk/collections/women_belts', 'name': 'Belts'}, {'url': 'https://breakout.com.pk/collections/women_caps', 'name': 'Hats'}]
+kidsBrands = [{'url': 'https://breakout.com.pk/collections/new-in-3', 'name': 'NEW IN'}, {'url': 'https://breakout.com.pk/collections/tees-3', 'name': 'Tees'}, {'url': 'https://breakout.com.pk/collections/boys_1-5_shirts', 'name': 'Shirts'}, {'url': 'https://breakout.com.pk/collections/bottoms-2', 'name': 'Bottoms'}, {'url': 'https://breakout.com.pk/collections/accessories-shoes-3', 'name': 'Shoes'}, {'url': 'https://breakout.com.pk/collections/boys_acc', 'name': 'Accessories'}, {'url': 'https://breakout.com.pk/collections/new-in-2', 'name': 'NEW IN'}, {'url': 'https://breakout.com.pk/collections/tees-2', 'name': 'Tees'}, {'url': 'https://breakout.com.pk/collections/shirts', 'name': 'Shirts'}, {'url': 'https://breakout.com.pk/collections/bottoms-1', 'name': 'Bottoms'}, {'url': 'https://breakout.com.pk/collections/accessories-shoes-2', 'name': 'Shoes'}, {'url': 'https://breakout.com.pk/collections/boys_acc', 'name': 'Accessories'}]
+
 brand_count = 0
 scrapeUrl = ""
 
@@ -45,8 +46,7 @@ def goToProductDetail(_productData,productUrl):
     _productData['size'] = size
     _productData['pictures'] = pictures
     print('product data ', _productData)
-    # print("sizeDiv ______________", sizeDiv)
-    # print("colorDiv______________", colorDiv)
+    # mydb.productslist.insert_one(_productData)
     print('................................................................................................')
 
 
@@ -60,8 +60,10 @@ def openSitePage(menBrands, gender):
 
 jsonData = []
 def processSitePageSoup(soup, brandName,gender):
+    print('processing soup')
     products = soup.findAll('div',{'class':'product-item'})
     for product in products:
+        print('prodcut data ', product)
         if(product.find('div',{'class':'details'})):
             # print("product======>>>>",product.find('div',{'class':'details'}))
             title = product.find('div',{'class':'details'}).findAll('a')[0].text
@@ -71,21 +73,6 @@ def processSitePageSoup(soup, brandName,gender):
             if (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[1]):
                 priceOld = (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[0]).text
                 priceNew = (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[1]).text
-            # imageURL = product.find('div',{'class':'picture'}).findAll('img')['src']
-            # print("Type = ", gender)
-            # print("Brand = ", brandName)
-            # print("Title = ", title)
-            # print("Buy URL = ",  buyUrl)
-            # print("Price = ", price[:-5])
-            # print("Date = ", date.today())
-            # print('img = ', imageURL)
-            #Required attributes#
-            # Gender
-            # Category
-            # Price
-            # Color
-            # Size
-            # Review
             productData = {
                 "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
                 'name': title,
@@ -106,46 +93,49 @@ def processSitePageSoup(soup, brandName,gender):
                 'date': datetime.today(),
                 'mainBrand': 'breakout'
             }
-            # print("data________", productData)
-            #openProductDetail => get colors and sizes
             goToProductDetail(productData,buyUrl)
-            # mydb.productslist.insert_one(productData)
-            print('...........................................................................................')
 
 print('starting scrapping')
+
+def getAllLinks(_url):
+    _mainUrl = "https://breakout.com.pk"
+    driver.get(_url)
+    soup = BeautifulSoup(driver.page_source,'lxml')
+    print('get links')
+    menLinks = soup.findAll('li', attrs={'class': 'dropdown megamenu pt-submenu'})[0].findAll('ul', attrs={'class': 'pt-megamenu-submenu'})
+    womenLinks = soup.findAll('li', attrs={'class': 'dropdown megamenu pt-submenu'})[1].findAll('ul', attrs={'class': 'pt-megamenu-submenu'})
+    kidsLinks = soup.findAll('li', attrs={'class': 'dropdown megamenu pt-submenu'})[2].findAll('ul', attrs={'class': 'pt-megamenu-submenu'})
+
+    for ul in menLinks:
+        for brand in ul.findAll('li'):
+            if(brand.find('a') != -1):
+                menBrands.append({'url': _mainUrl + brand.find('a')['href'],'name': brand.find('a').text.strip()})
+    for ul in womenLinks:
+        for brand in ul.findAll('li'):
+            if (brand.find('a') != -1):
+                womenBrands.append({'url': _mainUrl +  brand.find('a')['href'],'name': brand.find('a').text.strip()})
+    for ul in kidsLinks:
+        for brand in ul.findAll('li'):
+            if(brand.find('a') != -1):
+                kidsBrands.append({'url': _mainUrl + brand.find('a')['href'],'name': brand.find('a').text.strip()})
+    print('menBrands = ', menBrands)
+    print('womenBrands = ', womenBrands)
+    print('kidsBrands = ', kidsBrands)
+
+    driver.close()
+
+##get all links
+# try:
+#     getAllLinks('https://breakout.com.pk/')
+# except Exception as el:
+#     print("Exception occured ", el)
+#     driver.close()
 
 try:
     allBrands = [{'blist':menBrands, 'name': 'men'},{'blist':womenBrands, 'name': 'women'},{'blist':kidsBrands, 'name': 'kids'}]
     for brand in allBrands:
        openSitePage(brand['blist'], brand['name'])
+
 except Exception as el:
     print("Exception occured ", el)
     driver.close()
-
-driver.close()
-# brandSoup = soup1.findAll('ul', attrs={'class':'sublist '})[7]
-# # print('soup_____', brandSoup)
-# breakCounter = 0
-# for brand in brandSoup:
-#     breakCounter += 1
-#     for li in brand:
-#         # print('', li)
-#         if(li.find('a') != -1):
-#             print(li['href'])
-#             print(li.text)
-#             menBrandNames.append(
-#                 {
-#                    'url': 'https://www.breakout.com.pk/'+li['href'],
-#                     'name': li.text.strip()
-#                  })
-#         # femaleBrandNames =  a
-#     print('........................................................................')
-#     # break
-#     # print('--counter ', breakCounter)
-#     # if(breakCounter == 1):
-#     #     menBrandNames = []
-#     # if(breakCounter == 2):
-#
-#     # print('link a', brand.find('a').text.strip())
-#
-# print('menBrandNames________ ', menBrandNames)

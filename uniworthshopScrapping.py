@@ -1,17 +1,17 @@
 import random
-from datetime import datetime
+from datetime import date,datetime
 from bs4 import BeautifulSoup
 import pymongo
-# myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-# mydb = myclient["fypDb"]
 from selenium import webdriver
+myclient       = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb           = myclient["fypDb"]
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
 menBrands = [{'url': 'https://www.uniworthshop.com/shirts/plain-shirts', 'name': 'Plain Shirts'}, {'url': 'https://www.uniworthshop.com/shirts/plain-shirts/regular-fit-plain-shirts', 'name': 'Regular Fit'}, {'url': 'https://www.uniworthshop.com/shirts/plain-shirts/smart-fit-plain-shirts', 'name': 'Smart Fit'}, {'url': 'https://www.uniworthshop.com/shirts/plain-shirts/tuxedo-shirt', 'name': 'Tuxedo Shirt'}, {'url': 'https://www.uniworthshop.com/shirts/check-shirts', 'name': 'Check Shirts'}, {'url': 'https://www.uniworthshop.com/shirts/check-shirts/regular-fit-check-shirts', 'name': 'Regular Fit'}, {'url': 'https://www.uniworthshop.com/shirts/check-shirts/smart-fit-check-shirts', 'name': 'Smart Fit'}, {'url': 'https://www.uniworthshop.com/shirts/stripe-shirts', 'name': 'Stripe Shirts'}, {'url': 'https://www.uniworthshop.com/shirts/stripe-shirts/regular-fit-stripe-shirts', 'name': 'Regular Fit'}, {'url': 'https://www.uniworthshop.com/shirts/stripe-shirts/smart-fit-stripe-shirts', 'name': 'Smart Fit'}, {'url': 'https://www.uniworthshop.com/shirts/double-cuff-plain-shirts', 'name': 'Double Cuff'}, {'url': 'https://www.uniworthshop.com/summer-soul/t-shirts', 'name': 'T-Shirts'}, {'url': 'https://www.uniworthshop.com/summer-soul/t-shirts/polo-t-shirts', 'name': 'Polo T-Shirts'}, {'url': 'https://www.uniworthshop.com/summer-soul/t-shirts/crew-neck-t-shirts', 'name': 'Crew Neck T-Shirts'}, {'url': 'https://www.uniworthshop.com/summer-soul/casual-shirts', 'name': 'Casual Shirts'}, {'url': 'https://www.uniworthshop.com/summer-soul/casual-shirts/full-sleeves-casual-shirts', 'name': 'Full Sleeves'}, {'url': 'https://www.uniworthshop.com/summer-soul/casual-shirts/half-sleeves-casual-shirts', 'name': 'Half Sleeves'}, {'url': 'https://www.uniworthshop.com/summer-soul/basic-tees', 'name': 'Basic Tees'}, {'url': 'https://www.uniworthshop.com/summer-soul/basic-tees/full-sleeve-basic-tees', 'name': 'Full Sleeve Basic Tees'}, {'url': 'https://www.uniworthshop.com/summer-soul/basic-tees/basic-tees', 'name': 'Half Sleeve Basic Tees'}, {'url': 'https://www.uniworthshop.com/summer-soul/cotton-trousers', 'name': 'Cotton Trousers'}, {'url': 'https://www.uniworthshop.com/trousers/formal-trousers', 'name': 'Formal Trousers'}, {'url': 'https://www.uniworthshop.com/trousers/formal-trousers/classic-fit', 'name': 'Classic Fit'}, {'url': 'https://www.uniworthshop.com/trousers/formal-trousers/smart-fit', 'name': 'Smart Fit'}, {'url': 'https://www.uniworthshop.com/trousers/denim-jeans', 'name': 'Denim Jeans'}, {'url': 'https://www.uniworthshop.com/trousers/mens-chinos', 'name': 'Mens Chinos'}, {'url': 'https://www.uniworthshop.com/ethnic-wear/shalwar-suit', 'name': 'Shalwar Suit'}, {'url': 'https://www.uniworthshop.com/ethnic-wear/kurtas', 'name': 'Kurtas'}, {'url': 'https://www.uniworthshop.com/ethnic-wear/loose-fabric', 'name': 'Fabric'}, {'url': 'https://www.uniworthshop.com/ethnic-wear/peshawari-chappal', 'name': 'Peshawari Chappal'}, {'url': 'https://www.uniworthshop.com/suiting/men-s-suiting', 'name': 'Suiting'}, {'url': 'https://www.uniworthshop.com/suiting/gift-box', 'name': 'Gift Box'}, {'url': 'https://www.uniworthshop.com/suiting/pocket-square-1', 'name': 'Pocket Square'}, {'url': 'https://www.uniworthshop.com/suiting/tiepin', 'name': 'Tie Pin'}, {'url': 'https://www.uniworthshop.com/relaxing-wear/woven-pajamas', 'name': 'Pajamas'}, {'url': 'https://www.uniworthshop.com/relaxing-wear/tshirt-pajama', 'name': 'T-Shirt & Pajama Set'}, {'url': 'https://www.uniworthshop.com/relaxing-wear/track-suit', 'name': 'Track Suits'}, {'url': 'https://www.uniworthshop.com/relaxing-wear/mens-shorts', 'name': 'Mens Shorts'}, {'url': 'https://www.uniworthshop.com/accessories/mens-perfumes', 'name': 'Perfumes'}, {'url': 'https://www.uniworthshop.com/accessories/ties', 'name': 'Ties'}, {'url': 'https://www.uniworthshop.com/accessories/ties/regular-ties', 'name': 'Regular Ties'}, {'url': 'https://www.uniworthshop.com/accessories/ties/slim-ties', 'name': 'Slim ties'}, {'url': 'https://www.uniworthshop.com/accessories/ties/bow-tie', 'name': 'Bow Tie Set'}, {'url': 'https://www.uniworthshop.com/accessories/belts', 'name': 'Belts'}, {'url': 'https://www.uniworthshop.com/accessories/belts/pin-buckles', 'name': 'Pin Buckles'}, {'url': 'https://www.uniworthshop.com/accessories/belts/fancy-buckles', 'name': 'Fancy Buckles'}, {'url': 'https://www.uniworthshop.com/accessories/belts/casual-belt', 'name': 'Casual Belt'}, {'url': 'https://www.uniworthshop.com/accessories/socks', 'name': 'Socks'}]
 #This site has only men's brands products
 
 def goToProductDetail(_productData,productUrl):
     #get colors and size of product
-    print('product url ', productUrl)
+    # print('product url ', productUrl)
     driver.get(productUrl)
     soup = BeautifulSoup(driver.page_source, 'lxml')
     # print("detail soup ",soup)
@@ -37,7 +37,7 @@ def goToProductDetail(_productData,productUrl):
     # _productData['pictures'] = pictures
     _productData['price'] = price
     print('product data ', _productData)
-    print('................................................................................................')
+    # mydb.products.insert_one(_productData)
 
 def openSitePage(brandData, type):
     for sitePage in brandData:
@@ -80,10 +80,8 @@ def processSitePageSoup(soup, brandName,gender):
                 'mainBrand': 'uniworthshop'
             }
             # print('data_____',dataObject)
-            # if(dataObject['pictures'][0] != ""):
-            #     mydb.products.insert_one(dataObject)
             goToProductDetail(dataObject,buyUrl)
-            print('...........................................................................................')
+            # print('...........................................................................................')
 
 print('starting scrapping')
 

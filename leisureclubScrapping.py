@@ -11,22 +11,40 @@ menBrands = [{'url': 'https://www.leisureclub.pk/men/tops-t-shirts/shirt.html', 
 womenBrands = [{'url': 'https://www.leisureclub.pk/women/tops-t-shirts/top.html', 'name': 'Top'}, {'url': 'https://www.leisureclub.pk/women/tops-t-shirts/t-shirt.html', 'name': 'T-Shirt'}, {'url': 'https://www.leisureclub.pk/women/tops-t-shirts/suit.html', 'name': 'Suit'}, {'url': 'https://www.leisureclub.pk/women/tops-t-shirts/tunic.html', 'name': 'Tunic'}, {'url': 'https://www.leisureclub.pk/women/outerwear/cardigan.html', 'name': 'Cardigan'}, {'url': 'https://www.leisureclub.pk/women/outerwear/pullover.html', 'name': 'Pullover'}, {'url': 'https://www.leisureclub.pk/women/outerwear/blazer.html', 'name': 'Blazer'}, {'url': 'https://www.leisureclub.pk/women/outerwear/jacket.html', 'name': 'Jacket'}, {'url': 'https://www.leisureclub.pk/women/outerwear/reglan.html', 'name': 'Reglan'}, {'url': 'https://www.leisureclub.pk/women/outerwear/hoodie.html', 'name': 'Hoodie'}, {'url': 'https://www.leisureclub.pk/women/outerwear/sweater.html', 'name': 'Sweater'}, {'url': 'https://www.leisureclub.pk/women/outerwear/coat.html', 'name': 'Coat'}, {'url': 'https://www.leisureclub.pk/women/nightwear/night-suit.html', 'name': 'Night Suit'}, {'url': 'https://www.leisureclub.pk/women/bottoms/jean.html', 'name': 'Jean'}, {'url': 'https://www.leisureclub.pk/women/bottoms/trouser.html', 'name': 'Trouser'}, {'url': 'https://www.leisureclub.pk/women/bottoms/tight.html', 'name': 'Tight'}, {'url': 'https://www.leisureclub.pk/women/bottoms/jeggings.html', 'name': 'JEGGINGS'}, {'url': 'https://www.leisureclub.pk/women/accessories/belt.html', 'name': 'Belt'}, {'url': 'https://www.leisureclub.pk/women/footwear/shoe.html', 'name': 'Shoe'}, {'url': 'https://www.leisureclub.pk/women/footwear/flip-flop.html', 'name': 'Flip Flop'}]
 kidsBrands = [{'url': 'https://www.leisureclub.pk/kids/boys/t-shirts-tops.html', 'name': 'T-Shirts & Tops'}, {'url': 'https://www.leisureclub.pk/kids/boys/outerwear.html', 'name': 'Outerwear'}, {'url': 'https://www.leisureclub.pk/kids/boys/nightwear.html', 'name': 'Nightwear'}, {'url': 'https://www.leisureclub.pk/kids/boys/bottoms.html', 'name': 'Bottoms'}, {'url': 'https://www.leisureclub.pk/kids/boys/footwear.html', 'name': 'Footwear'}, {'url': 'https://www.leisureclub.pk/kids/girls/t-shirts-tops.html', 'name': 'T-Shirts & Tops'}, {'url': 'https://www.leisureclub.pk/kids/girls/outerwear.html', 'name': 'Outerwear'}, {'url': 'https://www.leisureclub.pk/kids/girls/nightwear.html', 'name': 'NightWear'}, {'url': 'https://www.leisureclub.pk/kids/girls/bottoms.html', 'name': 'Bottoms'}, {'url': 'https://www.leisureclub.pk/kids/girls/footwear.html', 'name': 'Footwear'}, {'url': 'https://www.leisureclub.pk/kids/baby-boy/t-shirts-tops.html', 'name': 'T-Shirts & Tops'}, {'url': 'https://www.leisureclub.pk/kids/baby-boy/outerwear.html', 'name': 'Outerwear'}, {'url': 'https://www.leisureclub.pk/kids/baby-boy/bottoms.html', 'name': 'Bottoms'}, {'url': 'https://www.leisureclub.pk/kids/baby-boy/accessories.html', 'name': 'Accessories'}, {'url': 'https://www.leisureclub.pk/kids/baby-boy/footwear.html', 'name': 'Footwear'}, {'url': 'https://www.leisureclub.pk/kids/baby-girl/t-shirts-tops.html', 'name': 'T-Shirts & Tops'}, {'url': 'https://www.leisureclub.pk/kids/baby-girl/outerwear.html', 'name': 'Outerwear'}, {'url': 'https://www.leisureclub.pk/kids/baby-girl/bottoms.html', 'name': 'Bottoms'}, {'url': 'https://www.leisureclub.pk/kids/baby-girl/accessories.html', 'name': 'Accessories'}, {'url': 'https://www.leisureclub.pk/kids/baby-girl/footwear.html', 'name': 'Footwear'}]
 
-def goToProductDetail(_productData,productUrl):
+
+menSalesBrands = [
+{'url' : 'https://www.leisureclub.pk/sale/men.html', 'name': 'Men'},
+]
+
+womenSalesBrands = [
+    {'url': 'https://www.leisureclub.pk/sale/boutique.html', 'name': 'Boutique'},
+    {'url': 'https://www.leisureclub.pk/sale/women.html', 'name': 'Women'},
+]
+
+kidsSalesBrands = [
+    {'url': 'https://www.leisureclub.pk/sale/kids-party-line.html', 'name': 'Kids Party Line'},
+    {'url': 'https://www.leisureclub.pk/sale/infant-boys.html', 'name': 'Infant Boys'},
+    {'url': 'https://www.leisureclub.pk/sale/infant-girls.html', 'name': 'Infant Girls'},
+    {'url': 'https://www.leisureclub.pk/sale/girls.html', 'name': 'Girls'},
+]
+
+def goToProductDetail(_productData,productUrl, collectionName):
     #get colors and size of product
     print('product url ', productUrl)
     driver.get(productUrl)
     soup = BeautifulSoup(driver.page_source, 'lxml')
     sizeDiv =[]
-    if(soup.find('select', attrs={'class': 'currentSwatch required-entry super-attribute-select no-display swatch-select'})):
-        sizeDiv = soup.find('select', attrs={'class': 'currentSwatch required-entry super-attribute-select no-display swatch-select'}).findAll('option')[1:]
+    if(soup.find('ul', attrs={'configurable-swatch-list clearfix'})):
+        sizeDiv = soup.find('ul', attrs={'class': 'configurable-swatch-list clearfix'}).findAll('li')
     colorRow = soup.find('table', attrs={'class': 'data-table'}).find('tr')
     price = soup.find('span', attrs={'class': 'price'}).text.strip()[4:]
     colors = []
     size = []
     for _size in sizeDiv:
         if(_size):
-            # print('size => ',_size.text.strip())
-            size.append(_size.text.strip())
+            # print('size => ',_size)
+            if('not-available' not in _size['class']):
+                size.append(_size.find('span', attrs={'class' : 'swatch-label'}).text.strip().lower())
     if (colorRow.find('th').text.strip().lower() == 'color'):
             # print('color => ', colorRow.find('td').text.strip().lower())
             colors.append(colorRow.find('td').text.strip().lower())
@@ -35,16 +53,17 @@ def goToProductDetail(_productData,productUrl):
     _productData['size'] = size
     _productData['price'] = price
     print('product data ', _productData)
+    mydb[collectionName].insert_one(_productData)
     print('................................................................................................')
 
-def openSitePage(brandData, type):
+def openSitePage(brandData, type, collectionName):
     for sitePage in brandData:
         print('sitePage ', sitePage['url'])
         driver.get(sitePage['url'])
         soup = BeautifulSoup(driver.page_source, 'lxml')
-        processSitePageSoup(soup, sitePage['name'],type)
+        processSitePageSoup(soup, sitePage['name'],type, collectionName)
 
-def processSitePageSoup(soup, brandName,gender):
+def processSitePageSoup(soup, brandName,gender, collectionName):
         print('in soup page ')
         products = soup.select('li[class*="item col-lg-3 col-md-3 col-sm-6 col-xs-6"]')
         # print('products ', products)
@@ -72,51 +91,8 @@ def processSitePageSoup(soup, brandName,gender):
                 'date': datetime.today(),
                 'mainBrand': 'leisureclub'
             }
-            # print('data__',dataObject)
-            # if(dataObject['pictures'][0] != ""):
-            #mydb.products.insert_one(dataObject)
-            goToProductDetail(dataObject,buy_url)
+            goToProductDetail(dataObject,buy_url, collectionName)
             # print('...........................................................................................')
-
-#         url = "https://www.gulahmedshop.com/" + type_array[type_temp] + "?p="+str(pagecount)
-#         response = requests.get(url,headers=header)
-#         print(url)
-#         soup = BeautifulSoup(response.content, 'html.parser')
-#         khaadi = soup.findAll("li", {"class": "item product product-item"})
-#         for khad in khaadi:
-#             price = khad.find('span', {'class': 'price'}).text.strip()[4:]
-#             buy_url = khad.find('a')['href']
-#             title = khad.find('a', {'class': "product-item-link"}).text.strip()
-#             imageURL = khad.findAll('img')[0]['src']
-#             dataObject = {
-#                 "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
-#                 'name': title,
-#                 'pictures': [imageURL],
-#                 'stock': random.choice(list(range(10, 400))),
-#                 # 'price': int(price.strip().replace(',', '')),
-#                 'discount': random.choice(list(range(0, 100))),
-#                 # 'salePrice': int(price.strip().replace(',', '')) + random.choice([0, 300]),
-#                 'description': '',
-#                 'tags': [type_array[type_temp]],
-#                 'rating': random.choice(list(range(0, 5))),
-#                 'category': type_array[type_temp],
-#                 'colors': [random.choice(colors), random.choice(colors), random.choice(colors)],
-#                 'size': size,
-#                 'buyUrl': buy_url,
-#                 'gender': type_array[type_temp],
-#                 'brand': '',
-#                 'date': datetime.today(),
-#                 'mainBrand': 'gulahmed'
-#             }
-#             print('data__',dataObject)
-#             mydb.products.insert_one(dataObject)
-#
-#         pagecount -=1
-#
-#     type_temp += 1
-#
-
-
 
 #find list to iterate
 
@@ -142,21 +118,40 @@ def getAllLinks(_url):
 
     driver.close()
 
-# #start point for getting all the links for men,women,kids brands urls and brand names
-# try:
-#     scrapeUrl = "https://www.leisureclub.pk"
-#     getAllLinks(scrapeUrl)
-# except Exception as el:
-#     print("Error opening site  ", el)
-#     driver.close()
-
-# starting point for scrapping all the data
 
 print('starting scrapping')
+
+def ScrapSales(collectionName):
+    try:
+        salesBrands = [
+            {'blist': womenSalesBrands, 'name': 'women'},
+            {'blist': menSalesBrands, 'name': 'men'},
+            {'blist': kidsSalesBrands, 'name': 'kids'},
+        ]
+        for brand in salesBrands:
+            openSitePage(brand['blist'], brand['name'],collectionName)
+    except Exception as el:
+        print("Exception occured ", el)
+        driver.close()
+
+def ScrapProducts(collectionName):
+    try:
+        allBrands = [{'blist': menBrands, 'name': 'men'}, {'blist': womenBrands, 'name': 'women'},
+                     {'blist': kidsBrands, 'name': 'kids'}]
+        for brand in allBrands:
+            openSitePage(brand['blist'], brand['name'],collectionName)
+    except Exception as el:
+        print("Exception occured ", el)
+        driver.close()
+
 try:
-    allBrands = [{'blist':womenBrands, 'name': 'women'},{'blist':menBrands, 'name': 'men'},{'blist':kidsBrands, 'name': 'kids'}]
-    for brand in allBrands:
-       openSitePage(brand['blist'], brand['name'])
+
+    ScrapSales('sales')
+    # ScrapProducts('products')
+
+    # #start point for getting all the links for men,women,kids brands urls and brand names
+    # scrapeUrl = "https://www.leisureclub.pk"
+    # getAllLinks(scrapeUrl)
 except Exception as el:
     print("Exception occured ", el)
     driver.close()

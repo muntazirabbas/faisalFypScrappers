@@ -30,7 +30,9 @@ def goToProductDetail(_productData,productUrl):
     # time.sleep(1)
     soup = BeautifulSoup(driver.page_source, 'lxml')
     size = []
-    sizeDiv = soup.find('select', attrs={'id' : 'pa_size'}).findAll('option')[1:]
+    sizeDiv = []
+    if(soup.find('select', attrs={'id' : 'pa_size'})):
+        sizeDiv = soup.find('select', attrs={'id' : 'pa_size'}).findAll('option')[1:]
     for _size in sizeDiv:
         if (_size):
             # print('size => ',_size.text)
@@ -38,36 +40,46 @@ def goToProductDetail(_productData,productUrl):
         # print('sizeDiv ', sizeDiv)
     _productData['size'] = size
     print('product data ', _productData)
-    print('................................................................................................')
+    mydb.products.insert_one(_productData)
+    # print('................................................................................................')
 
 def processSitePageSoup(soup, brandName,gender):
+    colors = []
     for rowdata in soup.select('li[class*="qv-hover product-display-standard"]'):
         if (rowdata != None):
             buy_url = rowdata.findAll('a')[-1]['href']
             title = rowdata.find('div', attrs={'class': 'product-details'}).find('a').text.strip()
-            print("title ", title)
-            color = ""
-            if(title.split("–").__len__() > 1):
-                color = title.split("–")[-1].strip().lower()
-            print('color ', color)
-            compareColors = ['aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 'lime', 'maroon', 'navy', 'olive', 'orange', 'purple', 'red', 'silver', 'teal', 'white', 'yellow']
-            for _name in compareColors:
-                if _name in color:
-                    print('_name match', _name)
+            # color = ""
+            # if(title.split("–").__len__() > 1):
+            #     color = title.split("–")[-1].strip().lower()
+            # print('color ', color)
+            # compareColors = ['aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 'lime', 'maroon', 'navy', 'olive', 'orange', 'purple', 'red', 'silver', 'teal', 'white', 'yellow']
+            # for _name in compareColors:
+            #     if _name in color:
+            #         print('_name match', _name)
 
-            print('color after compare ___________', color)
+            # print('color after compare ___________', color)
             imageURL = rowdata.find("img")['src']
             price = rowdata.find('span', {'class': 'woocommerce-Price-amount amount'})
+            colorFirst = title.lower().split('-')
+            # print('colors ', colorFirst)
+            color = colorFirst[-1].split('–')[-1].strip()
+            # print('final color ', color)
+
+            if not (color.isdigit()):
+               colors = [color]
+            else:
+                colors = []
             dataObject = {
                 "id" : random.choice(list(range(0,100000)))+random.choice(list(range(77,15400)))+random.choice(list(range(55,5000))),
                 'name' :  "title",
-                'colors': [color],
+                'colors': colors,
                 'size': [],
                 'pictures' : [imageURL],
                 'stock' : "N/A",
                 'price' : int(price.text.strip()[2:].replace(',','')),
-                'discount' : int(price.text.strip()[2:].replace(',','')) - int(price.text.strip()[2:].replace(',','')),
-                'salePrice' : int(price.text.strip()[2:].replace(',','')),
+                'discount' : 0,
+                'salePrice' : 0,
                 'description': '',
                 'tags': [gender,brandName],
                 'rating': random.choice(list(range(3, 5))),
@@ -80,8 +92,6 @@ def processSitePageSoup(soup, brandName,gender):
             }
             # print("data________",dataObject, "/n buyUrl",buy_url)
             goToProductDetail(dataObject,buy_url)
-            # mydb.productslist.insert_one(dataObject)
-        print('...........................................................................................')
 
 def openSitePage(brandData, gender):
     print("brandData " , brandData)
