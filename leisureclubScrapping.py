@@ -53,7 +53,7 @@ def goToProductDetail(_productData,productUrl, collectionName):
     _productData['size'] = size
     _productData['price'] = price
     print('product data ', _productData)
-    mydb[collectionName].insert_one(_productData)
+    # mydb[collectionName].insert_one(_productData)
     print('................................................................................................')
 
 def openSitePage(brandData, type, collectionName):
