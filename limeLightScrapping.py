@@ -51,7 +51,7 @@ while(type_temp < len(type_array)):
            'mainBrand': 'limelight'
        }
        print(dataObject)
-       # mydb.products.insert_one(dataObject)
+       # mydb.products.insert_one(dataObject)l ,m
        counter +=1
        print('...........................................\n')
 

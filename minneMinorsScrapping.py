@@ -1,6 +1,4 @@
-import requests
 from bs4 import BeautifulSoup
-import requests
 import random
 from datetime import datetime
 import requests
