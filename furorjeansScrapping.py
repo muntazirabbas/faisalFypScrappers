@@ -40,7 +40,7 @@ def goToProductDetail(_productData,productUrl):
         # print('sizeDiv ', sizeDiv)
     _productData['size'] = size
     print('product data ', _productData)
-    mydb.products.insert_one(_productData)
+    mydb.freshProducts.insert_one(_productData)
     # print('................................................................................................')
 
 def processSitePageSoup(soup, brandName,gender):
@@ -60,7 +60,11 @@ def processSitePageSoup(soup, brandName,gender):
 
             # print('color after compare ___________', color)
             imageURL = rowdata.find("img")['src']
-            price = rowdata.find('span', {'class': 'woocommerce-Price-amount amount'})
+            price=0
+            if(rowdata.findAll('span', {'class': 'woocommerce-Price-amount amount'})[1]):
+                price = rowdata.findAll('span', {'class': 'woocommerce-Price-amount amount'})[1]
+            else:
+                price = rowdata.findAll('span', {'class': 'woocommerce-Price-amount amount'})[0]
             colorFirst = title.lower().split('-')
             # print('colors ', colorFirst)
             color = colorFirst[-1].split('–')[-1].strip()
@@ -72,7 +76,7 @@ def processSitePageSoup(soup, brandName,gender):
                 colors = []
             dataObject = {
                 "id" : random.choice(list(range(0,100000)))+random.choice(list(range(77,15400)))+random.choice(list(range(55,5000))),
-                'name' :  "title",
+                'name' :  title,
                 'colors': colors,
                 'size': [],
                 'pictures' : [imageURL],

@@ -18,10 +18,21 @@ def goToProductDetail(_productData,productUrl):
     driver.get(productUrl)
     soup = BeautifulSoup(driver.page_source, 'lxml')
     # print("detail soup ",soup)
-    sizeDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[0].findAll('option')
-    colorDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[1].findAll('option')
-    price = soup.find('span', attrs={'class': 'product-single__price'}).text.strip()[3:-3]
-    print('price__',price)
+
+    sizeDiv = []
+    selectCount = len(soup.findAll('select', attrs={'class': 'single-option-selector single-option-selector-product-template product-form__input'}))
+    if(soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[0]):
+        # print('in size div')
+        sizeDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[0].findAll('option')
+    colorDiv = []
+    # print('select count ', selectCount)
+    if(selectCount > 1):
+        # print('in count > 1')
+        if(soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[1]):
+            print('in color div')
+            colorDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[1].findAll('option')
+    price = soup.find('span', attrs={'class': 'product-single__price'}).text.strip()[3:]
+    # print('price__',price)
     pictures = []
     colors = []
     size = []
@@ -29,7 +40,7 @@ def goToProductDetail(_productData,productUrl):
     for _size in sizeDiv:
         if(_size):
             # print('size => ',_size.text)
-            size.append(_size.text)
+            size.append(_size.text.lower())
     for color in colorDiv:
         if(color):
             # print('color => ',color['title'])
@@ -46,6 +57,7 @@ def goToProductDetail(_productData,productUrl):
     _productData['pictures'] = pictures
     _productData['price'] = price
     print('product data ', _productData)
+    mydb.freshProducts.insert_one(_productData)
     print('................................................................................................')
 
 
@@ -88,10 +100,7 @@ def processSitePageSoup(soup, brandName,gender):
                 'mainBrand': 'engine'
             }
             # print('data_____',dataObject)
-            # if(dataObject['pictures'][0] != ""):
-            #     mydb.products.insert_one(dataObject)
             goToProductDetail(dataObject,buyUrl)
-            print('...........................................................................................')
 
 print('starting scrapping')
 
@@ -154,7 +163,9 @@ def getAllLinks(scrapeUrl):
 
 #start point for scrapping all the data
 try:
-    openSitePage(menBrands, 'kids')
+    allBrands = [{'blist':kidsBrands, 'name': 'kids'}, {'blist':womenBrands, 'name': 'women'},{'blist':menBrands, 'name': 'men'} ]
+    for brand in allBrands:
+       openSitePage(brand['blist'], brand['name'])
 except Exception as el:
     print("Exception occured ", el)
     driver.close()

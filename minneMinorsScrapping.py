@@ -43,7 +43,7 @@ while(type_temp < len(type_array)):
                'mainBrand': 'minnieminors'
            }
            print(dataObject)
-           # mydb.products.insert_one(dataObject)
+           mydb.freshProducts.insert_one(dataObject)
            print('...........................................\n')
 
     type_temp += 1

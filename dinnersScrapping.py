@@ -112,11 +112,9 @@ def processSitePageSoup(soup, brandName,gender):
                 'date': datetime.today(),
                 'mainBrand': 'diners'
             }
-            print('data_____',dataObject)
-            mydb.products.insert_one(dataObject)
-            print('...........................................................................................')
-
-print('starting scrapping')
+            # print('data_____',dataObject)
+            # mydb.freshProducts.insert_one(dataObject)
+print("starting scrapping")
 
 def getAllLinks(scrapeUrl):
     webUrl = "https://diners.com.pk/"
@@ -164,25 +162,28 @@ def getAllLinks(scrapeUrl):
     print('womenBrands ', womenBrands)
     print('kidsBrands ', kidsBrands)
 
+def startScrapping():
+    # start point for scrapping all the data
+    try:
+        allBrands = [{'blist': kidsBrands, 'name': 'kids'}, {'blist': womenBrands, 'name': 'women'},
+                     {'blist': menBrands, 'name': 'men'}]
+        for brand in allBrands:
+            openSitePage(brand['blist'], brand['name'])
+    except Exception as el:
+        print("Exception occured ", el)
+        driver.close()
 
 ##start point for getting all the links for men,women,kids brands urls and brand names
 
-# try:
-#     scrapeUrl = "https://diners.com.pk/collections/girls"
-#     getAllLinks(scrapeUrl)
-# except Exception as el:
-#     print("Error opening site  ", el)
-#     driver.close()
-
-
-#start point for scrapping all the data
 try:
-    allBrands = [{'blist':kidsBrands, 'name': 'kids'}, {'blist':womenBrands, 'name': 'women'},{'blist':menBrands, 'name': 'men'}]
-    for brand in allBrands:
-       openSitePage(brand['blist'], brand['name'])
+    scrapeUrl = "https://diners.com.pk/collections/girls"
+    # getAllLinks(scrapeUrl)
+    startScrapping()
+    # _products = mydb.get_collection('products').find()
+    # for prod in _products:
+    #     print('database products ', prod)
 except Exception as el:
-    print("Exception occured ", el)
+    print("Error opening site  ", el)
     driver.close()
-
 
 driver.close()

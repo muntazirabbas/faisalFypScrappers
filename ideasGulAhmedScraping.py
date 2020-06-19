@@ -7,8 +7,8 @@ from selenium import webdriver
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["fypDb"]
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
-menBrands   = [{'url': 'https://www.gulahmedshop.com/mens-clothes/western/dress-shirts', 'name': 'DRESS SHIRTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/casual-shirts', 'name': 'CASUAL SHIRTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/polos', 'name': 'POLOS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/tees', 'name': 'TEES'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/sweaters', 'name': 'SWEATERS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/jackets', 'name': 'JACKETS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/dress-pants', 'name': 'DRESS PANTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/khaki-s', 'name': "KHAKI'S"}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/jeans', 'name': 'JEANS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/trousers', 'name': 'TROUSERS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/shorts', 'name': 'SHORTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/belts', 'name': 'BELTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/kurta', 'name': 'KURTA'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/suits', 'name': 'SUITS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/stitched-waist-coat', 'name': 'STITCHED WAIST COAT'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/shalwar', 'name': 'ETHNIC BOTTOMS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/president-edition', 'name': 'PRESIDENT EDITION'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/men-chairman-latha', 'name': 'CHAIRMAN LATHA'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/shawls', 'name': 'SHAWLS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/regular', 'name': 'CLASSIC'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/winter', 'name': 'WINTER'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/summer', 'name': 'SUMMER'}]
-womenBrands = [{'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/summer-premium-collection', 'name': 'SUMMER PREMIUM COLLECTION'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/summer-basic-collection', 'name': 'SUMMER BASIC COLLECTION'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/bagh-e-gul', 'name': 'BAGH-E-GUL'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/vintage-garden', 'name': 'VINTAGE GARDEN'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/taani-jacquard-collection', 'name': 'TAANI JACQUARD COLLECTION'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/tribute-mothers-lawn-collection', 'name': 'TRIBUTE COLLECTION'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/uni-trend', 'name': 'UNI TREND'}, {'url': 'https://www.gulahmedshop.com/women/ideas-pret/solids', 'name': 'SOLIDS'}, {'url': 'https://www.gulahmedshop.com/women/ideas-pret/digitals', 'name': 'DIGITALS'}, {'url': 'https://www.gulahmedshop.com/women/ideas-pret/stitched-suits', 'name': 'SUITS'}, {'url': 'https://www.gulahmedshop.com/women/ideas-pret/semi-formals', 'name': 'SEMI-FORMALS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern', 'name': 'EASTERN'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western', 'name': 'WESTERN'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched', 'name': 'UNSTITCHED'}, {'url': 'https://www.gulahmedshop.com/ideas-home/bed-sheets', 'name': 'BED SHEETS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/bed-sheets/throw', 'name': 'THROWS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/bath-linen/towel', 'name': 'TOWELS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/bed-sheets/dyed-sheet-set', 'name': 'DUVET SETS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/home-accessories/cushion', 'name': 'CUSHION COVERS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/home-accessories', 'name': 'ACCESSORIES'}]
+menBrands   = [ {'url': 'https://www.gulahmedshop.com/mens-clothes/western/casual-shirts', 'name': 'CASUAL SHIRTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/polos', 'name': 'POLOS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/tees', 'name': 'TEES'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/sweaters', 'name': 'SWEATERS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/jackets', 'name': 'JACKETS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/dress-pants', 'name': 'DRESS PANTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/khaki-s', 'name': "KHAKI'S"}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/jeans', 'name': 'JEANS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/trousers', 'name': 'TROUSERS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/shorts', 'name': 'SHORTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western/belts', 'name': 'BELTS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/kurta', 'name': 'KURTA'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/suits', 'name': 'SUITS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/stitched-waist-coat', 'name': 'STITCHED WAIST COAT'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/shalwar', 'name': 'ETHNIC BOTTOMS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern/president-edition', 'name': 'PRESIDENT EDITION'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/men-chairman-latha', 'name': 'CHAIRMAN LATHA'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/shawls', 'name': 'SHAWLS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/regular', 'name': 'CLASSIC'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/winter', 'name': 'WINTER'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched/summer', 'name': 'SUMMER'},{'url': 'https://www.gulahmedshop.com/mens-clothes/western/dress-shirts', 'name': 'DRESS SHIRTS'}]
+womenBrands = [ {'url': 'https://www.gulahmedshop.com/women/ideas-pret/solids', 'name': 'SOLIDS'}, {'url': 'https://www.gulahmedshop.com/women/ideas-pret/digitals', 'name': 'DIGITALS'}, {'url': 'https://www.gulahmedshop.com/women/ideas-pret/stitched-suits', 'name': 'SUITS'}, {'url': 'https://www.gulahmedshop.com/women/ideas-pret/semi-formals', 'name': 'SEMI-FORMALS'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/eastern', 'name': 'EASTERN'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/western', 'name': 'WESTERN'}, {'url': 'https://www.gulahmedshop.com/mens-clothes/unstitched', 'name': 'UNSTITCHED'}, {'url': 'https://www.gulahmedshop.com/ideas-home/bed-sheets', 'name': 'BED SHEETS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/bed-sheets/throw', 'name': 'THROWS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/bath-linen/towel', 'name': 'TOWELS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/bed-sheets/dyed-sheet-set', 'name': 'DUVET SETS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/home-accessories/cushion', 'name': 'CUSHION COVERS'}, {'url': 'https://www.gulahmedshop.com/ideas-home/home-accessories', 'name': 'ACCESSORIES'},{'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/summer-premium-collection', 'name': 'SUMMER PREMIUM COLLECTION'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/summer-basic-collection', 'name': 'SUMMER BASIC COLLECTION'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/bagh-e-gul', 'name': 'BAGH-E-GUL'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/vintage-garden', 'name': 'VINTAGE GARDEN'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/taani-jacquard-collection', 'name': 'TAANI JACQUARD COLLECTION'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/tribute-mothers-lawn-collection', 'name': 'TRIBUTE COLLECTION'}, {'url': 'https://www.gulahmedshop.com/unstitched-fabric/lawn-collection/uni-trend', 'name': 'UNI TREND'},]
 kidsBrands  = [{'url': 'https://www.gulahmedshop.com/kids/girls/girls-eastern/kurtis', 'name': 'KURTIS'}, {'url': 'https://www.gulahmedshop.com/kids/girls/girls-eastern/2pc-suits', 'name': '2PC SUITS'}, {'url': 'https://www.gulahmedshop.com/kids/girls/girls-eastern/trousers', 'name': 'TROUSERS'}, {'url': 'https://www.gulahmedshop.com/kids/girls/girls-western/sweaters', 'name': 'SWEATERS'}, {'url': 'https://www.gulahmedshop.com/kids/girls/girls-western/shirts', 'name': 'TEES'}, {'url': 'https://www.gulahmedshop.com/kids/girls/girls-western/tops', 'name': 'TOPS'}, {'url': 'https://www.gulahmedshop.com/kids/boys/sweaters', 'name': 'SWEATERS'}, {'url': 'https://www.gulahmedshop.com/kids/home/bed-sheet', 'name': 'BED SHEETS'}, {'url': 'https://www.gulahmedshop.com/kids/home/bath-robes', 'name': 'BATHROBES'}, {'url': 'https://www.gulahmedshop.com/kids/home/towel', 'name': 'TOWELS'}]
 
 menSalesBrands = [
@@ -33,31 +33,40 @@ kidsSalesBrands = [
     {'url': 'https://www.gulahmedshop.com/sale/kids/ready-to-wear', 'name': 'Ready To Wear'},
 ]
 
+def colorAssignment(color):
+    if "black" in color:
+        return "black"
+    elif "blue" in color:
+        return "blue"
+    elif "white" in color:
+        return "white"
+    elif "red" in color:
+        return "red"
+    elif "green" in color:
+        return "green"
+    elif "navy" in color:
+        return "navy"
+    else:
+        return "other"
+
 def goToProductDetail(_productData, productUrl, collectionName):
     #get colors and size of product
     print('product url ', productUrl)
     driver.get(productUrl)
-    time.sleep(5)
+    time.sleep(10)
     soup = BeautifulSoup(driver.page_source, 'lxml')
-    # print("detail soup ",soup)
-    sizeDiv =[]
     size = []
     if(soup.find('div', attrs={'class' : 'swatch-attribute-options clearfix'})):
         sizeDiv = soup.find('div', attrs={'class' : 'swatch-attribute-options clearfix'}).findAll('div')
         for _size in sizeDiv:
             if (_size):
-                # print('size => ',_size.text)
                 size.append(_size.text.strip().lower())
-        # print('size div', sizeDiv)
     price = 0
     if(soup.find('div', attrs={'class': 'product-info-main'}).find('span', attrs={'class': 'price'})):
         price = soup.find('div', attrs={'class': 'product-info-main'}).find('span', attrs={'class': 'price'}).text.strip()[4:]
-    # print("pice_____", price)
     price = int(price.replace(',', ''))
     # print('price__',price)
-    colors = []
 
-    _productData['colors'] = colors
     _productData['size'] = size
     _productData['price'] = price
     _productData['salePrice'] = price
@@ -81,6 +90,8 @@ def processSitePageSoup(soup, brandName,gender,collectionName):
             buy_url = khad.find('a')['href']
             title = khad.find('a', {'class': "product-item-link"}).text.strip()
             imageURL = khad.findAll('img')[0]['src']
+            color = colorAssignment(title.lower())
+
             dataObject = {
                 "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
                 'name': title,
@@ -93,7 +104,7 @@ def processSitePageSoup(soup, brandName,gender,collectionName):
                 'tags': [gender, brandName],
                 'rating': random.choice(list(range(3, 5))),
                 'category': gender,
-                'colors': [],
+                'colors': [color],
                 'size': [],
                 'buyUrl': buy_url,
                 'gender': gender,
@@ -180,8 +191,11 @@ def ScrapSales(collectionName):
 
 def ScrapProducts(collectionName):
     try:
-        allBrands = [{'blist': menBrands, 'name': 'men'}, {'blist': womenBrands, 'name': 'women'},
-                     {'blist': kidsBrands, 'name': 'kids'}]
+        allBrands = [
+                        {'blist': womenBrands, 'name': 'women'},
+                        {'blist': kidsBrands, 'name': 'kids'},
+            {'blist': menBrands, 'name': 'men'},
+                    ]
         for brand in allBrands:
             openSitePage(brand['blist'], brand['name'],collectionName)
     except Exception as el:
@@ -190,8 +204,8 @@ def ScrapProducts(collectionName):
 
 try:
 
-    ScrapSales('sales')
-    # ScrapProducts('products')
+    # ScrapSales('sales')
+    ScrapProducts('freshProducts')
     # scrapeUrl = "https://www.gulahmedshop.com/"
     # getAllLinks(scrapeUrl)
 except Exception as el:

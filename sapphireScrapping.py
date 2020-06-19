@@ -25,6 +25,13 @@ while(type_temp < len(type_array)):
        title = sapphire.find('img')['alt'].strip()
        price = sapphire.find('span', {'class': 'money'}).text.strip()[3:-3]
        imageUrl = sapphire.find('div', attrs={'class' : 'product-top'}).find('img')['data-src']
+       sizes = []
+       if(sapphire.find('ul', attrs={'class': 'product-grid-options-size'})):
+           sizeDiv = sapphire.find('ul', attrs={'class': 'product-grid-options-size'}).findAll('li')
+           for _size in sizeDiv:
+               if (_size):
+                   # print('size => ',_size.text)
+                   sizes.append(_size.text.strip().lower())
        counter +=1
        dataObject = {
            "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
@@ -39,7 +46,7 @@ while(type_temp < len(type_array)):
            'rating': random.choice(list(range(3, 5))),
            'category': title,
            'colors': [],
-           'size': [],
+           'size': sizes,
            'buyUrl': buy_url,
            'gender': gender,
            'brand': title,
@@ -47,7 +54,7 @@ while(type_temp < len(type_array)):
            'mainBrand': 'sapphire'
        }
        print(dataObject)
-       # mydb.products.insert_one(dataObject)
+       mydb.freshProducts.insert_one(dataObject)
        print(".................................................................................................\n")
 
     type_temp += 1

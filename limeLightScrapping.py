@@ -22,13 +22,13 @@ while(type_temp < len(type_array)):
        Type = type_array[type_temp]
        buy_url = "https://www.limelight.pk"+limeLight.find('a')['href']
        title = limeLight.find('a')['title'].strip()
-       price = limeLight.find('span', {'class': 'money'}).text.strip()[4:-3]
+       price = limeLight.find('span', {'class': 'money'}).text.strip()[3:]
        imageUrl = "https:"+limeLight.find('img')['data-src']
-       print("Image URL", imageUrl)
-       print("Type = ",Type)
-       print("Title = ",title)
-       print("Buy URL = ", buy_url)
-       print("Price = ",price)
+       # print("Image URL", imageUrl)
+       # print("Type = ",Type)
+       # print("Title = ",title)
+       # print("Buy URL = ", buy_url)
+       # print("Price = ",price)
        dataObject = {
            "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(
                list(range(55, 5000))),
@@ -51,7 +51,7 @@ while(type_temp < len(type_array)):
            'mainBrand': 'limelight'
        }
        print(dataObject)
-       # mydb.products.insert_one(dataObject)l ,m
+       mydb.freshProducts.insert_one(dataObject)
        counter +=1
        print('...........................................\n')
 

@@ -15,43 +15,9 @@ brand_count = 0
 scrapeUrl = ""
 
 
-def goToProductDetail(_productData,productUrl):
-    #get colors and size of product
-    print('product url ', productUrl)
-    driver.get(productUrl)
-    soup = BeautifulSoup(driver.page_source, 'lxml')
-    # print("detail soup ",soup)
-    sizeDiv = soup.findAll('ul', attrs={'class' : 'sbOptions'})[1].findAll('li', attrs={'class' : 'addsize'})[1:]
-    colorDiv = soup.find('ul', attrs={'class' : 'option-list color-squares'}).findAll('span', attrs={'class' : 'color-container'})
-    pictures = []
-    colors = []
-    size = []
-
-    for _size in sizeDiv:
-        if(_size):
-            # print('size => ',_size.text)
-            size.append(_size.text)
-    for color in colorDiv:
-        if(color):
-            # print('color => ',color['title'])
-            colors.append(color['title'])
-    if(soup.find('div', attrs={'class': 'gallery picture'}).findAll('img')):
-        pictureDiv = soup.find('div', attrs={'class': 'gallery picture'}).findAll('img')
-        for pic in pictureDiv:
-            if (pic):
-                # print('pic____',pic['src'])
-                pictures.append(pic['src'])
-
-    _productData['colors'] = colors
-    _productData['size'] = size
-    _productData['pictures'] = pictures
-    print('product data ', _productData)
-    # mydb.productslist.insert_one(_productData)
-    print('................................................................................................')
-
 
 def openSitePage(menBrands, gender):
-    print("menBrands " , menBrands)
+    # print("menBrands " , menBrands)
     for sitePage in menBrands:
         print('sitePage ', sitePage)
         driver.get(sitePage['url'])
@@ -61,39 +27,54 @@ def openSitePage(menBrands, gender):
 jsonData = []
 def processSitePageSoup(soup, brandName,gender):
     print('processing soup')
-    products = soup.findAll('div',{'class':'product-item'})
+    products = soup.findAll('div',{'class':'col-6 col-md-3 pt-col-item'})
+    print('products count ', len(products))
     for product in products:
-        print('prodcut data ', product)
-        if(product.find('div',{'class':'details'})):
-            # print("product======>>>>",product.find('div',{'class':'details'}))
-            title = product.find('div',{'class':'details'}).findAll('a')[0].text
-            buyUrl = 'https://www.breakout.com.pk'+product.find('div',{'class':'details'}).findAll('a')[0]['href']
-            priceNew = 0
-            priceOld = 0
-            if (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[1]):
-                priceOld = (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[0]).text
-                priceNew = (product.find('div',{'class':'details'}).find('div', {'class': 'prices'}).findAll('span')[1]).text
+        # print('prodcut data ', product)
+        if(product.find('div',{'class':'pt-description'})):
+            title = product.find('div',{'class':'pt-description'}).find('a').text.strip()
+            buyUrl = 'https://www.breakout.com.pk' + product.find('div',{'class':'pt-description'}).find('a')['href']
+            priceCount = len(product.find('div', attrs={'class' : 'pt-price'}).findAll('span'))
+            price = 0
+            if(priceCount > 1):
+                price = product.find('div', attrs={'class' : 'pt-price'}).findAll('span')[1].text.strip()[3:]
+            else:
+                price = product.find('div', attrs={'class' : 'pt-price'}).findAll('span')[0].text.strip()[3:]
+
+            images = []
+            if(product.find('img')['src']):
+                images = ["https:" + product.find('img')['src']]
+            sizes = []
+            if(product.find('ul', attrs={'class': 'pt-options-swatch productitem-option1-js'})):
+                sizeDiv = product.find('ul', attrs={'class': 'pt-options-swatch productitem-option1-js'}).findAll('li')
+                for _size in sizeDiv:
+                    # print('_size ', _size)
+                    if(_size.find('a')):
+                        # print('a in size ', _size.find('a'))
+                        sizes.append(_size.find('a').text.strip().lower())
             productData = {
                 "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
                 'name': title,
-                'pictures': [],
+                'pictures': images,
                 'stock': 0,
-                'price': int(priceNew[:-5].strip().replace(',', '')),
-                'discount': int(priceOld[:-5].strip().replace(',', '')) - int(priceNew[:-5].strip().replace(',', '')),
-                'salePrice': int(priceOld[:-5].strip().replace(',', '')),
+                'price': price,
+                'discount': 0,
+                'salePrice': 0,
                 'description': '',
                 'tags': [gender, brandName],
                 'rating': random.choice(list(range(3, 5))),
                 'category': gender,
                 'colors': [],
-                'size': [],
+                'size': sizes,
                 'buyUrl': buyUrl,
                 'gender': gender,
                 'brand': brandName,
                 'date': datetime.today(),
                 'mainBrand': 'breakout'
             }
-            goToProductDetail(productData,buyUrl)
+            print('data _______', productData )
+            mydb.freshProducts.insert_one(productData)
+
 
 print('starting scrapping')
 
@@ -132,7 +113,11 @@ def getAllLinks(_url):
 #     driver.close()
 
 try:
-    allBrands = [{'blist':menBrands, 'name': 'men'},{'blist':womenBrands, 'name': 'women'},{'blist':kidsBrands, 'name': 'kids'}]
+    allBrands = [
+        {'blist':menBrands, 'name': 'men'},
+        {'blist':womenBrands, 'name': 'women'},
+        {'blist': kidsBrands, 'name': 'kids'},
+    ]
     for brand in allBrands:
        openSitePage(brand['blist'], brand['name'])
 

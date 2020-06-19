@@ -25,7 +25,7 @@ while(type_temp < len(type_array)):
         soup = BeautifulSoup(response.content, 'html.parser')
         nishat = soup.findAll("li", {"class": "item product product-item"})
         for nish in nishat:
-            price = nish.find('span', {'class': 'price'}).text
+            price = nish.find('span', {'class': 'price'}).text[4:]
             buy_url = nish.find('a')['href']
             title = nish.find('a', {'class': "product-item-link"}).text.strip()
 
@@ -56,7 +56,7 @@ while(type_temp < len(type_array)):
                 'mainBrand': 'nishat'
             }
             print(dataObject)
-            # mydb.products.insert_one(dataObject)
+            mydb.freshProducts.insert_one(dataObject)
         pagecount -=1
 
     type_temp += 1

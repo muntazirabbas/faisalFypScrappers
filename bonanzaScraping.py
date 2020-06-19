@@ -14,7 +14,7 @@ driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_w
 
 menBrands = [{'url': 'https://www.bonanzasatrangi.com/pk/men/groom-collection', 'name': 'Groom Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/kurta', 'name': 'Kurta'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/waistcoat', 'name': 'Waistcoat'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/kurta-shalwar', 'name': 'Kurta Shalwar'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/unstitched', 'name': 'Unstitched'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/pajama', 'name': 'Pajama'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/shalwar-suit', 'name': 'Shalwar Suit'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/3in1', 'name': 'Packages'}]
 womenBrands = [{'url': 'https://www.bonanzasatrangi.com/pk/unstitched/dastaan-premium-collection', 'name': 'Dastaan Premium Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/winter-collection-2019-vol-1', 'name': 'Winter Collection 2019'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/festive-collection-2019', 'name': 'Satrangi Collection 2019'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/unstitched-trousers', 'name': 'Unstitched Trousers'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/unstitched', 'name': 'Satrangi Simple'},{'url': 'https://www.bonanzasatrangi.com/pk/unstitched/dastaan-premium-collection', 'name': 'Dastaan Premium Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/winter-collection-2019-vol-1', 'name': 'Winter Collection 2019'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/festive-collection-2019', 'name': 'Satrangi Collection 2019'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/unstitched-trousers', 'name': 'Unstitched Trousers'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/unstitched', 'name': 'Satrangi Simple'}, {'url': 'https://www.bonanzasatrangi.com/pk/pret/kunbi-pret', 'name': 'Kunbi Pret'}, {'url': 'https://www.bonanzasatrangi.com/pk/pret/pret', 'name': 'Summer Pret'}, {'url': 'https://www.bonanzasatrangi.com/pk/pret/outline-collection', 'name': 'Outline Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/accessories/dupatta', 'name': 'Dupatta'}, {'url': 'https://www.bonanzasatrangi.com/pk/accessories/shalwar', 'name': 'Shalwar'}, {'url': 'https://www.bonanzasatrangi.com/pk/accessories/trouser', 'name': 'Trouser'}]
-kidsBrands = [{'url':'https://www.bonanzasatrangi.com/pk/kids/teen-pret', 'name': 'Pop Teen Pret'}]
+kidsBrands = [{'url':'https://www.bonanzasatrangi.com/pk/kids/kids-alive/1-piece/', 'name': '1 Piece'}]
 
 menSalesBrands = [
 {'url' : 'https://www.bonanzasatrangi.com/pk/sale/men/unstitched/', 'name': 'Unstitched'},
@@ -26,7 +26,7 @@ womenSalesBrands = [ {'url':'https://www.bonanzasatrangi.com/pk/sale/women/unsti
     {'url': 'https://www.bonanzasatrangi.com/pk/sale/women/accessories/', 'name': 'Accessories'},
     {'url': 'https://www.bonanzasatrangi.com/pk/sale/sweaters/women/', 'name': 'Sweaters'},]
 
-def goToProductDetail(_productData,productUrl,collectionName):
+def goToProductDetail(_productData,productUrl):
     #get colors and size of product
     print('product url ', productUrl)
     driver.get(productUrl)
@@ -60,10 +60,10 @@ def goToProductDetail(_productData,productUrl,collectionName):
     _productData['colors'] = colors
     _productData['size'] = size
     print('product data ', _productData)
-    mydb[collectionName].insert_one(_productData)
+    # mydb.freshProducts.insert_one(_productData)
     print('................................................................................................')
 
-def processSitePageSoup(soup, brandName,gender,collectionName):
+def processSitePageSoup(soup, brandName,gender):
     if(soup.findAll('div',{'class':'product-item-info product-content'})):
         for rowdata in soup.findAll('div',{'class':'product-item-info product-content'}):
             if (rowdata != None):
@@ -92,33 +92,37 @@ def processSitePageSoup(soup, brandName,gender,collectionName):
                     'mainBrand': 'bonanza'
                 }
                 # print("data________",dataObject)
-                goToProductDetail(dataObject,buy_url,collectionName)
+                goToProductDetail(dataObject,buy_url)
     else:
         print('no products found')
 
-def openSitePage(brandData, gender , collectionName):
+def openSitePage(brandData, gender):
     # print("brandData " , brandData)
     for sitePage in brandData:
         # print('sitePage ', sitePage)
         driver.get(sitePage['url'])
         soup = BeautifulSoup(driver.page_source, 'lxml')
-        processSitePageSoup(soup, sitePage['name'],gender,collectionName)
+        processSitePageSoup(soup, sitePage['name'],gender)
 
-def ScrapSales(collectionName):
-    try:
-        salesBrands = [{'blist': menSalesBrands, 'name': 'men'},{'blist': womenSalesBrands, 'name': 'women'}]
-        for brand in salesBrands:
-            openSitePage(brand['blist'], brand['name'],collectionName)
-    except Exception as el:
-        print("Exception occured ", el)
-        driver.close()
+# def ScrapSales():
+#     try:
+#         salesBrands = [{'blist': menSalesBrands, 'name': 'men'},{'blist': womenSalesBrands, 'name': 'women'}]
+#         for brand in salesBrands:
+#             openSitePage(brand['blist'], brand['name'])
+#     except Exception as el:
+#         print("Exception occured ", el)
+#         driver.close()
 
-def ScrapProducts(collectionName):
+def ScrapProducts():
     try:
-        allBrands = [{'blist': menBrands, 'name': 'men'}, {'blist': womenBrands, 'name': 'women'},
-                     {'blist': kidsBrands, 'name': 'kids'}]
+        allBrands = [
+            {'blist': kidsBrands, 'name': 'kids'},
+            {'blist': menBrands, 'name': 'men'},
+            {'blist': womenBrands, 'name': 'women'},
+        ]
+
         for brand in allBrands:
-            openSitePage(brand['blist'], brand['name'],collectionName)
+            openSitePage(brand['blist'], brand['name'])
     except Exception as el:
         print("Exception occured ", el)
         driver.close()
@@ -145,8 +149,7 @@ def getAllLinks(scrapeUrl):
 
 try:
 
-    ScrapSales('sales')
-    # ScrapProducts('products')
+    ScrapProducts()
     # scrapeUrl = "https://www.bonanzasatrangi.com/pk/men/"
     # getAllLinks(scrapeUrl)
 except Exception as el:

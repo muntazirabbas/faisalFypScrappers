@@ -47,7 +47,7 @@ def goToProductDetail(_productData,productUrl):
         price = priceSpans[0].text.strip()
     _productData['size'] = size
     _productData['price'] = price[3:]
-    # mydb.products.insert_one(_productData)
+    mydb.freshProducts.insert_one(_productData)
     print('product data ', _productData)
 
 def openSitePage(brandData, type):
