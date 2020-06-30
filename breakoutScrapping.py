@@ -14,8 +14,6 @@ kidsBrands = [{'url': 'https://breakout.com.pk/collections/new-in-3', 'name': 'N
 brand_count = 0
 scrapeUrl = ""
 
-
-
 def openSitePage(menBrands, gender):
     # print("menBrands " , menBrands)
     for sitePage in menBrands:
@@ -114,9 +112,9 @@ def getAllLinks(_url):
 
 try:
     allBrands = [
-        {'blist':menBrands, 'name': 'men'},
         {'blist':womenBrands, 'name': 'women'},
         {'blist': kidsBrands, 'name': 'kids'},
+        {'blist': menBrands, 'name': 'men'},
     ]
     for brand in allBrands:
        openSitePage(brand['blist'], brand['name'])

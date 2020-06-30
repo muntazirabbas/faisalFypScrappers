@@ -33,6 +33,14 @@ def colorAssignment(color):
         return "green"
     elif "navy" in color:
         return "navy"
+    elif "mint" in color:
+        return "mint"
+    elif "navy" in color:
+        return "navy"
+    elif "cream" in color:
+        return "cream"
+    elif "mehroon" in color:
+        return "mehroon"
     else:
         return "other"
 

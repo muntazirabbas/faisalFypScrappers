@@ -60,7 +60,7 @@ def goToProductDetail(_productData,productUrl):
     _productData['colors'] = colors
     _productData['size'] = size
     print('product data ', _productData)
-    # mydb.freshProducts.insert_one(_productData)
+    mydb.freshProducts.insert_one(_productData)
     print('................................................................................................')
 
 def processSitePageSoup(soup, brandName,gender):
@@ -116,9 +116,9 @@ def openSitePage(brandData, gender):
 def ScrapProducts():
     try:
         allBrands = [
-            {'blist': kidsBrands, 'name': 'kids'},
-            {'blist': menBrands, 'name': 'men'},
             {'blist': womenBrands, 'name': 'women'},
+            {'blist': menBrands, 'name': 'men'},
+            {'blist': kidsBrands, 'name': 'kids'},
         ]
 
         for brand in allBrands:

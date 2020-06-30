@@ -6,9 +6,17 @@ myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["fypDb"]
 from selenium import webdriver
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
-menBrands = [{'url': 'https://www.engine.com.pk/collections/men-casual-shirts', 'name': 'Shirts'}, {'url': 'https://www.engine.com.pk/collections/men-t-shirts', 'name': 'T-Shirts'}, {'url': 'https://www.engine.com.pk/collections/men-jeans', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/men-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/men-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/men-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}, {'url': 'https://www.engine.com.pk/collections/men-sweaters', 'name': 'Sweaters'}, {'url': 'https://www.engine.com.pk/collections/men-jackets', 'name': 'Jackets'}, {'url': 'https://www.engine.com.pk/collections/men-glasses', 'name': 'Glasses'}, {'url': 'https://www.engine.com.pk/collections/men-footwear', 'name': 'Footwear'}]
+menBrands = [{'url': 'https://www.engine.com.pk/collections/men-casual-shirts', 'name': 'Shirts'},
+             {'url': 'https://www.engine.com.pk/collections/men-t-shirts', 'name': 'T-Shirts'},
+             {'url': 'https://www.engine.com.pk/collections/men-jeans', 'name': 'Jeans'},
+             {'url': 'https://www.engine.com.pk/collections/men-pants', 'name': 'Pants'},
+             {'url': 'https://www.engine.com.pk/collections/men-trousers', 'name': 'Trousers'},
+             {'url': 'https://www.engine.com.pk/collections/men-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}, {'url': 'https://www.engine.com.pk/collections/men-sweaters', 'name': 'Sweaters'}, {'url': 'https://www.engine.com.pk/collections/men-jackets', 'name': 'Jackets'}, {'url': 'https://www.engine.com.pk/collections/men-glasses', 'name': 'Glasses'}, {'url': 'https://www.engine.com.pk/collections/men-footwear', 'name': 'Footwear'}]
 womenBrands = [{'url': 'https://www.engine.com.pk/collections/woven-top', 'name': 'Woven Tops'}, {'url': 'https://www.engine.com.pk/collections/women-kurties', 'name': 'Kurties'}, {'url': 'https://www.engine.com.pk/collections/women-bottoms', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/women-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/women-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/women-tights', 'name': 'Tights'}, {'url': 'https://www.engine.com.pk/collections/women-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}, {'url': 'https://www.engine.com.pk/collections/women-sweaters', 'name': 'Sweaters'}, {'url': 'https://www.engine.com.pk/collections/ladies-jacket', 'name': 'Jackets'}, {'url': 'https://www.engine.com.pk/collections/women-sleepwear', 'name': 'Sleepwear'}, {'url': 'https://www.engine.com.pk/collections/women-footwear', 'name': 'Footwear'}]
-kidsBrands =[{'url': 'https://www.engine.com.pk/collections/t-shirt', 'name': 'T-Shirts'}, {'url': 'https://www.engine.com.pk/collections/boys-bottom', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/boys-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/boys-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/boys-shorts', 'name': 'Shorts'}, {'url': 'https://www.engine.com.pk/collections/boys-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}]
+kidsBrands =[
+    {'url': 'https://www.engine.com.pk/collections/t-shirt', 'name': 'T-Shirts'},
+    {'url': 'https://www.engine.com.pk/collections/boys-bottom', 'name': 'Jeans'},
+    {'url': 'https://www.engine.com.pk/collections/boys-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/boys-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/boys-shorts', 'name': 'Shorts'}, {'url': 'https://www.engine.com.pk/collections/boys-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}]
 
 
 
@@ -163,7 +171,10 @@ def getAllLinks(scrapeUrl):
 
 #start point for scrapping all the data
 try:
-    allBrands = [{'blist':kidsBrands, 'name': 'kids'}, {'blist':womenBrands, 'name': 'women'},{'blist':menBrands, 'name': 'men'} ]
+    allBrands = [
+        # {'blist':kidsBrands, 'name': 'kids'},
+        # {'blist':womenBrands, 'name': 'women'},
+        {'blist':menBrands, 'name': 'men'} ]
     for brand in allBrands:
        openSitePage(brand['blist'], brand['name'])
 except Exception as el:

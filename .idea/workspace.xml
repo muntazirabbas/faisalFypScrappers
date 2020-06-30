@@ -3,23 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="32d15581-9c00-4cf0-8814-afc626dadfc5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beechtreeScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/beechtreeScrapping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bonanzaScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/bonanzaScraping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/breakoutScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/breakoutScrapping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dinnersScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/dinnersScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edenrobeScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/edenrobeScrapping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engineScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/engineScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/furorjeansScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/furorjeansScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ideasGulAhmedScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/ideasGulAhmedScraping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/khaadiScraping1.py" beforeDir="false" afterPath="$PROJECT_DIR$/khaadiScraping1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leisureclubScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/leisureclubScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/limeLightScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/limeLightScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minneMinorsScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/minneMinorsScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monarkScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/monarkScrapping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nishatScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/nishatScrapping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outfittersScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/outfittersScraping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sapphireScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/sapphireScrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniworthshopScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/uniworthshopScrapping.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,26 +21,27 @@
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$khaadiScraping1.coverage" NAME="khaadiScraping1 Coverage Results" MODIFIED="1592588214648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$minneMinorsScrapping.coverage" NAME="minneMinorsScrapping Coverage Results" MODIFIED="1592592770411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$nishatScraping.coverage" NAME="nishatScraping Coverage Results" MODIFIED="1590948521104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$bonanzaScraping.coverage" NAME="bonanzaScraping Coverage Results" MODIFIED="1592598266361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$breakoutScrapping.coverage" NAME="breakoutScrapping Coverage Results" MODIFIED="1592600246294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScraping.coverage" NAME="sapphireScraping Coverage Results" MODIFIED="1590947655976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$minnieMinorsScraping.coverage" NAME="minnieMinorsScraping Coverage Results" MODIFIED="1590949442731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$amazonScrapping.coverage" NAME="amazonScrapping Coverage Results" MODIFIED="1593497370355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../amazonScrapping fiverr" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$leisureclubScrapping.coverage" NAME="leisureclubScrapping Coverage Results" MODIFIED="1592990496116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScrapping.coverage" NAME="sapphireScrapping Coverage Results" MODIFIED="1592596759523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$monarkScrapping.coverage" NAME="monarkScrapping Coverage Results" MODIFIED="1592592922338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$beechtreeScrapping.coverage" NAME="beechtreeScrapping Coverage Results" MODIFIED="1592598050701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$ideasGulAhmedScraping.coverage" NAME="ideasGulAhmedScraping Coverage Results" MODIFIED="1592587056131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$bonanzaScraping.coverage" NAME="bonanzaScraping Coverage Results" MODIFIED="1592982706860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$breakoutScrapping.coverage" NAME="breakoutScrapping Coverage Results" MODIFIED="1592600372505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScraping.coverage" NAME="sapphireScraping Coverage Results" MODIFIED="1590947655976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$furorjeansScrapping.coverage" NAME="furorjeansScrapping Coverage Results" MODIFIED="1592582653638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$uniworthshopScrapping.coverage" NAME="uniworthshopScrapping Coverage Results" MODIFIED="1592597708885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$dinnersScrapping.coverage" NAME="dinnersScrapping Coverage Results" MODIFIED="1592558401168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$leisureclubScrapping.coverage" NAME="leisureclubScrapping Coverage Results" MODIFIED="1592592074476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$dinnersScrapping.coverage" NAME="dinnersScrapping Coverage Results" MODIFIED="1592983200205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$whatsonSaleScrapping.coverage" NAME="whatsonSaleScrapping Coverage Results" MODIFIED="1590947099712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$edenrobeScrapping.coverage" NAME="edenrobeScrapping Coverage Results" MODIFIED="1592580376042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$limelightScraping.coverage" NAME="limelightScraping Coverage Results" MODIFIED="1590950095748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScraping__1_.coverage" NAME="sapphireScraping (1) Coverage Results" MODIFIED="1591075622108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$limeLightScrapping.coverage" NAME="limeLightScrapping Coverage Results" MODIFIED="1592592677254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$outfittersScraping.coverage" NAME="outfittersScraping Coverage Results" MODIFIED="1592596418418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScrapping.coverage" NAME="sapphireScrapping Coverage Results" MODIFIED="1592596759523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$engineScrapping.coverage" NAME="engineScrapping Coverage Results" MODIFIED="1592582416242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$monarkScrapping.coverage" NAME="monarkScrapping Coverage Results" MODIFIED="1592592922338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$beechtreeScrapping.coverage" NAME="beechtreeScrapping Coverage Results" MODIFIED="1592598050701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$nishatScrapping.coverage" NAME="nishatScrapping Coverage Results" MODIFIED="1592593688846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$ideasGulAhmedScraping.coverage" NAME="ideasGulAhmedScraping Coverage Results" MODIFIED="1592587056131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$engineScrapping.coverage" NAME="engineScrapping Coverage Results" MODIFIED="1592991788471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$nishatScrapping.coverage" NAME="nishatScrapping Coverage Results" MODIFIED="1592987181692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$beechtreeScraping.coverage" NAME="beechtreeScraping Coverage Results" MODIFIED="1591073527706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
   <component name="DatabaseView">
@@ -134,36 +125,37 @@
     <session id="-1483754001">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.29" value="2" />
           <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="log" value="1" />
-          <entry key="py" value="90" />
+          <entry key="py" value="111" />
           <entry key="pyi" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="90" />
+          <entry key="Python" value="111" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="8720" />
+          <entry key="py" value="11882" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="8720" />
+          <entry key="Python" value="11882" />
         </counts>
       </usages-collector>
     </session>
@@ -171,13 +163,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/breakoutScrapping.py">
+        <entry file="file://$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="292">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#4252#4282#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4097">
+              <caret line="241" selection-start-line="241" selection-end-line="241" />
             </state>
           </provider>
         </entry>
@@ -193,23 +194,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>product__</find>
-      <find>product-display-standard</find>
-      <find>sle</find>
-      <find>com/sale-products/</find>
-      <find>/product-tag/sweat-shirts/</find>
-      <find>com/product-tag/monochrome-pret/</find>
-      <find>colorAssignment</find>
-      <find>select</find>
-      <find>selec</find>
-      <find>https://monark.com.pk/collections/formals'</find>
-      <find>https://www.breakout.com.pk//</find>
-      <find>product url</find>
-      <find>class=&quot;</find>
-      <find>src</find>
-      <find>opt</find>
-      <find>-pc-outfit-ips-20-10</find>
-      <find>sitePage</find>
       <find>imageURL</find>
       <find>men</find>
       <find>kid</find>
@@ -221,8 +205,25 @@
       <find>sitePage  {'url':</find>
       <find>hshop.com/collections/regular-fit-stripe-shirts'</find>
       <find>ata_____</find>
-      <find>product data</find>
       <find>product data  {'i</find>
+      <find>li</find>
+      <find>&lt;li</find>
+      <find>s-result-item celwidget</find>
+      <find>a-popover-content</find>
+      <find>s-result-item  celwidget</find>
+      <find>ASUS Chromebook Flip C302 2-In-1 Laptop- 12.5” Full HD 4-Way NanoEdge Touchscreen, Intel Core M5, 4GB RAM, 64GB Flas</find>
+      <find>select</find>
+      <find>product url</find>
+      <find>conta</find>
+      <find>contains text__</find>
+      <find>pagelink ______</find>
+      <find>pagelink _____________</find>
+      <find>pagelink _________</find>
+      <find>pagelin</find>
+      <find>roduct data</find>
+      <find>products count  24</find>
+      <find>pagelink ____</find>
+      <find>product data</find>
     </findStrings>
     <replaceStrings>
       <replace>https://pk.khaadi.com/</replace>
@@ -242,23 +243,25 @@
         <option value="$PROJECT_DIR$/../junaidFypScraping/limelightScraping.py" />
         <option value="$PROJECT_DIR$/../beechtreeScraping.py" />
         <option value="$PROJECT_DIR$/../sapphireScraping.py" />
-        <option value="$PROJECT_DIR$/dinnersScrapping.py" />
         <option value="$PROJECT_DIR$/edenrobeScrapping.py" />
-        <option value="$PROJECT_DIR$/engineScrapping.py" />
         <option value="$PROJECT_DIR$/furorjeansScrapping.py" />
         <option value="$PROJECT_DIR$/ideasGulAhmedScraping.py" />
         <option value="$PROJECT_DIR$/khaadiScraping1.py" />
-        <option value="$PROJECT_DIR$/leisureclubScrapping.py" />
         <option value="$PROJECT_DIR$/limeLightScrapping.py" />
         <option value="$PROJECT_DIR$/minneMinorsScrapping.py" />
         <option value="$PROJECT_DIR$/monarkScrapping.py" />
-        <option value="$PROJECT_DIR$/nishatScrapping.py" />
-        <option value="$PROJECT_DIR$/outfittersScraping.py" />
         <option value="$PROJECT_DIR$/sapphireScrapping.py" />
         <option value="$PROJECT_DIR$/uniworthshopScrapping.py" />
         <option value="$PROJECT_DIR$/beechtreeScrapping.py" />
         <option value="$PROJECT_DIR$/bonanzaScraping.py" />
         <option value="$PROJECT_DIR$/breakoutScrapping.py" />
+        <option value="$PROJECT_DIR$/dinnersScrapping.py" />
+        <option value="$PROJECT_DIR$/outfittersScraping.py" />
+        <option value="$PROJECT_DIR$/nishatScrapping.py" />
+        <option value="$PROJECT_DIR$/leisureclubScrapping.py" />
+        <option value="$PROJECT_DIR$/engineScrapping.py" />
+        <option value="$USER_HOME$/Desktop/amazonPythonScrapper.py" />
+        <option value="$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py" />
       </list>
     </option>
   </component>
@@ -269,10 +272,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3" />
     <option name="y" value="1" />
-    <option name="width" value="958" />
-    <option name="height" value="860" />
+    <option name="width" value="1487" />
+    <option name="height" value="759" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -313,8 +315,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.breakoutScrapping">
-    <configuration name="beechtreeScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.amazonScrapping">
+    <configuration name="amazonScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="zia_fyp_scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,12 +324,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../amazonScrapping fiverr" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beechtreeScrapping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -336,7 +338,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bonanzaScraping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dinnersScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="zia_fyp_scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -349,7 +351,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bonanzaScraping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dinnersScrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -358,7 +360,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="breakoutScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="engineScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="zia_fyp_scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -371,7 +373,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/breakoutScrapping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/engineScrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -380,7 +382,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sapphireScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="leisureclubScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="zia_fyp_scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -393,7 +395,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sapphireScrapping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leisureclubScrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -402,7 +404,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="uniworthshopScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="nishatScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="zia_fyp_scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -415,7 +417,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uniworthshopScrapping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nishatScrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -425,19 +427,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.sapphireScrapping" />
-      <item itemvalue="Python.uniworthshopScrapping" />
-      <item itemvalue="Python.beechtreeScrapping" />
-      <item itemvalue="Python.bonanzaScraping" />
-      <item itemvalue="Python.breakoutScrapping" />
+      <item itemvalue="Python.dinnersScrapping" />
+      <item itemvalue="Python.nishatScrapping" />
+      <item itemvalue="Python.leisureclubScrapping" />
+      <item itemvalue="Python.engineScrapping" />
+      <item itemvalue="Python.amazonScrapping" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.breakoutScrapping" />
-        <item itemvalue="Python.bonanzaScraping" />
-        <item itemvalue="Python.beechtreeScrapping" />
-        <item itemvalue="Python.uniworthshopScrapping" />
-        <item itemvalue="Python.sapphireScrapping" />
+        <item itemvalue="Python.amazonScrapping" />
+        <item itemvalue="Python.engineScrapping" />
+        <item itemvalue="Python.leisureclubScrapping" />
+        <item itemvalue="Python.nishatScrapping" />
+        <item itemvalue="Python.dinnersScrapping" />
       </list>
     </recent_temporary>
   </component>
@@ -467,12 +469,35 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15488432" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14588688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5893316" visible="true" weight="0.2678331" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5893316" visible="true" weight="0.47375506" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32974428" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.41066837" side_tool="true" weight="0.6958277" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26996806" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32974428" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32969153" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32969153" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15488432" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5893316" visible="true" weight="0.5154778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -488,29 +513,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32969153" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32969153" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26285347" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41318977" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32974428" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,31 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="138" selection-start-line="138" selection-end-line="140" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1592580375954" expanded="true" signature="5823:5828" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engineScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="165" column="129" lean-forward="true" selection-start-line="165" selection-start-column="129" selection-end-line="165" selection-end-column="129" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ideasGulAhmedScraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="196" column="48" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#12383#12785#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,20 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leisureclubScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="141" column="50" selection-start-line="141" selection-start-column="50" selection-end-line="141" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#9896#10298#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -655,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,62 +625,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monarkScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nishatScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outfittersScraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="164" column="48" selection-start-line="164" selection-start-column="48" selection-end-line="164" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/debug.log" />
     <entry file="file://$PROJECT_DIR$/sapphireScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/furorjeansScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,50 +640,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="104" column="15" selection-start-line="104" selection-start-column="15" selection-end-line="104" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dinnersScrapping.py">
+    <entry file="file://$PROJECT_DIR$/ideasGulAhmedScraping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1441">
-          <caret line="116" column="27" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1592558540060" expanded="true" signature="7091:7485" ph="..." />
-          </folding>
+        <state relative-caret-position="372">
+          <caret line="113" column="13" lean-forward="true" selection-start-line="94" selection-start-column="11" selection-end-line="113" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monarkScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="49" column="41" selection-start-line="49" selection-end-line="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/beechtreeScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
+        <state relative-caret-position="816">
           <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/bonanzaScraping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        <state relative-caret-position="-1716">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nishatScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dinnersScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outfittersScraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leisureclubScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engineScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/amazonPythonScrapper.py" />
+    <entry file="file://$PROJECT_DIR$/breakoutScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/furorjeansScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="47" column="33" selection-start-line="47" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#4252#4282#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/breakoutScrapping.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4097">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
         </state>
       </provider>
     </entry>

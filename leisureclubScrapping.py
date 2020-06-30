@@ -137,9 +137,9 @@ def ScrapSales(collectionName):
 def ScrapProducts(collectionName):
     try:
         allBrands = [
-                     {'blist': menBrands, 'name': 'men'},
+                     # {'blist': menBrands, 'name': 'men'},
                     {'blist': womenBrands, 'name': 'women'},
-            {'blist': kidsBrands, 'name': 'kids'},
+            # {'blist': kidsBrands, 'name': 'kids'},
                      ]
         for brand in allBrands:
             openSitePage(brand['blist'], brand['name'],collectionName)

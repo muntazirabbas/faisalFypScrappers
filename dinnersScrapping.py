@@ -24,6 +24,32 @@ kidsBrands =[
 ]
 
 
+def colorAssignment(color):
+    if "black" in color:
+        return "black"
+    elif "blue" in color:
+        return "blue"
+    elif "white" in color:
+        return "white"
+    elif "red" in color:
+        return "red"
+    elif "green" in color:
+        return "green"
+    elif "navy" in color:
+        return "navy"
+    elif "mint" in color:
+        return "mint"
+    elif "cream" in color:
+        return "cream"
+    elif "mehroon" in color:
+        return "mehroon"
+    elif "pink" in color:
+        return "pink"
+    elif "grey" in color:
+        return "grey"
+    else:
+        return "other"
+
 def goToProductDetail(_productData,productUrl):
     #get colors and size of product
     print('product url ', productUrl)
@@ -92,6 +118,7 @@ def processSitePageSoup(soup, brandName,gender):
             if(product.find('ul' , attrs={'class' : 'sizes-list'})):
                 for _size in product.find('ul' , attrs={'class' : 'sizes-list'}).findAll('li'):
                     sizes.append(_size.text.strip())
+            color = colorAssignment(title.lower())
             dataObject = {
                 "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
                 'name': title,
@@ -104,7 +131,7 @@ def processSitePageSoup(soup, brandName,gender):
                 'tags': [gender, brandName],
                 'rating': 'N/A',
                 'category': gender,
-                'colors': [],
+                'colors': [color],
                 'size': sizes,
                 'buyUrl': buyUrl,
                 'gender': gender,
@@ -112,8 +139,8 @@ def processSitePageSoup(soup, brandName,gender):
                 'date': datetime.today(),
                 'mainBrand': 'diners'
             }
-            # print('data_____',dataObject)
-            # mydb.freshProducts.insert_one(dataObject)
+            print('data_____',dataObject)
+            mydb.freshProducts.insert_one(dataObject)
 print("starting scrapping")
 
 def getAllLinks(scrapeUrl):
