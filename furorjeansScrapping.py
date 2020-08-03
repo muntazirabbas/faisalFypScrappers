@@ -9,18 +9,19 @@ myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["fypDb"]
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
 menBrands = [
-    {'url': 'https://furorjeans.com/product-category/top/casual-shirts-for-men/', 'name': 'CASUAL SHIRTS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/top/graphic-art-t-shirts/', 'name': 'GRAPHIC TSHIRTS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/bottom/denim-jeans/', 'name': 'JEANS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/bottom/chinos/', 'name': 'CHINOS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/outer-wear/hoodies/', 'name': 'HOODIES'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/outer-wear/jackets/', 'name': 'JACKETS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/outer-wear/sweat-shirts/', 'name': 'SWEAT SHIRTS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/accessories/socks/', 'name': 'SOCKS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/accessories/bags/', 'name': 'BAGS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/accessories/belts/', 'name': 'BELTS'},
-    {'url': 'http://furorjeans.wpengine.com/product-category/accessories/bracelets/', 'name': 'BRACELETS'},
+    # {'url': 'https://furorjeans.com/product-category/top/casual-shirts-for-men/', 'name': 'CASUAL SHIRTS'},
+    # {'url': 'http://furorjeans.wpengine.com/product-category/top/graphic-art-t-shirts/', 'name': 'GRAPHIC TSHIRTS'},
+    # {'url': 'http://furorjeans.wpengine.com/product-category/bottom/denim-jeans/', 'name': 'JEANS'},
+    # {'url': 'http://furorjeans.wpengine.com/product-category/bottom/chinos/', 'name': 'CHINOS'},
+    # {'url': 'http://furorjeans.wpengine.com/product-category/outer-wear/hoodies/', 'name': 'HOODIES'},
+    # {'url': 'http://furorjeans.wpengine.com/product-category/outer-wear/jackets/', 'name': 'JACKETS'},
+    # {'url': 'http://furorjeans.wpengine.com/product-category/outer-wear/sweat-shirts/', 'name': 'SWEAT SHIRTS'},
     {'url': 'http://furorjeans.wpengine.com/product-category/top/polo-shirts/', 'name': 'POLO SHIRTS'},
+    {'url': 'https://furorjeans.com/product-category/tank-tops/', 'name': 'TANK TOPS'},
+    {'url': 'https://furorjeans.com/product-category/top/basic-tees/', 'name' : 'BASIC TEES' },
+    {'url': 'https://furorjeans.com/product-category/bottom/shorts/', 'name': 'SHORTS'},
+    {'url': 'https://furorjeans.com/product-category/outer-wear/jogger-pants/', 'name': 'JOGGER PANTS'},
+
 ]
 
 def goToProductDetail(_productData,productUrl):
@@ -81,7 +82,7 @@ def processSitePageSoup(soup, brandName,gender):
                 'size': [],
                 'pictures' : [imageURL],
                 'stock' : "N/A",
-                'price' : int(price.text.strip()[2:].replace(',','')),
+                'price' : float(price.text.strip()[2:].replace(',','')),
                 'discount' : 0,
                 'salePrice' : 0,
                 'description': '',

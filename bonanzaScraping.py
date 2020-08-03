@@ -7,24 +7,27 @@ import random
 import pymongo
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["fypDb"]
-
 ua = UserAgent()
 header = {'user-agent':ua.chrome}
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
-
-menBrands = [{'url': 'https://www.bonanzasatrangi.com/pk/men/groom-collection', 'name': 'Groom Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/kurta', 'name': 'Kurta'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/waistcoat', 'name': 'Waistcoat'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/kurta-shalwar', 'name': 'Kurta Shalwar'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/unstitched', 'name': 'Unstitched'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/pajama', 'name': 'Pajama'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/shalwar-suit', 'name': 'Shalwar Suit'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/3in1', 'name': 'Packages'}]
-womenBrands = [{'url': 'https://www.bonanzasatrangi.com/pk/unstitched/dastaan-premium-collection', 'name': 'Dastaan Premium Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/winter-collection-2019-vol-1', 'name': 'Winter Collection 2019'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/festive-collection-2019', 'name': 'Satrangi Collection 2019'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/unstitched-trousers', 'name': 'Unstitched Trousers'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/unstitched', 'name': 'Satrangi Simple'},{'url': 'https://www.bonanzasatrangi.com/pk/unstitched/dastaan-premium-collection', 'name': 'Dastaan Premium Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/winter-collection-2019-vol-1', 'name': 'Winter Collection 2019'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/festive-collection-2019', 'name': 'Satrangi Collection 2019'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/unstitched-trousers', 'name': 'Unstitched Trousers'}, {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/unstitched', 'name': 'Satrangi Simple'}, {'url': 'https://www.bonanzasatrangi.com/pk/pret/kunbi-pret', 'name': 'Kunbi Pret'}, {'url': 'https://www.bonanzasatrangi.com/pk/pret/pret', 'name': 'Summer Pret'}, {'url': 'https://www.bonanzasatrangi.com/pk/pret/outline-collection', 'name': 'Outline Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/accessories/dupatta', 'name': 'Dupatta'}, {'url': 'https://www.bonanzasatrangi.com/pk/accessories/shalwar', 'name': 'Shalwar'}, {'url': 'https://www.bonanzasatrangi.com/pk/accessories/trouser', 'name': 'Trouser'}]
-kidsBrands = [{'url':'https://www.bonanzasatrangi.com/pk/kids/kids-alive/1-piece/', 'name': '1 Piece'}]
-
-menSalesBrands = [
-{'url' : 'https://www.bonanzasatrangi.com/pk/sale/men/unstitched/', 'name': 'Unstitched'},
-{'url' : 'https://www.bonanzasatrangi.com/pk/sale/men/stitched/', 'name': 'Stitched'},
-{'url' : 'https://www.bonanzasatrangi.com/pk/sale/sweaters/men/', 'name': 'Sweaters'},
+womenBrands = [
+    {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/festive-collection-2020/1-piece/', 'name': 'Unstitched'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/festive-collection-2020/2-piece/', 'name': 'Unstitched'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/unstitched/festive-collection-2020/3-piece/', 'name': 'Unstitched'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/pret/kunbi-pret/1-piece/', 'name': 'Kunbi Pret'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/pret/kunbi-pret/2-piece/', 'name': 'Kunbi Pret'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/pret/kunbi-pret/3-piece/', 'name': 'Kunbi Pret'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/pret/pret/1-piece/', 'name': 'Pret Wear'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/pret/pret/2-piece/', 'name': 'Pret Wear'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/pret/pret/2-piece/', 'name': 'Pret Wear'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/pret/outline-collection/1-piece/', 'name': 'Outline Collection'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/pret/teens/1-piece/', 'name': 'Alive'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/accessories/dupatta/', 'name': 'Dupatta'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/accessories/trouser/', 'name': 'Trouser'},
+    {'url': 'https://www.bonanzasatrangi.com/pk/accessories/shalwar//', 'name': 'Shalwar'},
 ]
-womenSalesBrands = [ {'url':'https://www.bonanzasatrangi.com/pk/sale/women/unstitched/', 'name': 'Unstitched'},
-    {'url': 'https://www.bonanzasatrangi.com/pk/sale/women/pret/', 'name': 'Pret'},
-    {'url': 'https://www.bonanzasatrangi.com/pk/sale/women/accessories/', 'name': 'Accessories'},
-    {'url': 'https://www.bonanzasatrangi.com/pk/sale/sweaters/women/', 'name': 'Sweaters'},]
+menBrands = [{'url': 'https://www.bonanzasatrangi.com/pk/men/groom-collection', 'name': 'Groom Collection'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/kurta', 'name': 'Kurta'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/waistcoat', 'name': 'Waistcoat'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/kurta-shalwar', 'name': 'Kurta Shalwar'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/unstitched', 'name': 'Unstitched'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/pajama', 'name': 'Pajama'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/shalwar-suit', 'name': 'Shalwar Suit'}, {'url': 'https://www.bonanzasatrangi.com/pk/men/3in1', 'name': 'Packages'}]
+kidsBrands = [{'url':'https://www.bonanzasatrangi.com/pk/kids/kids-alive/1-piece/', 'name': '1 Piece'},{'url':'https://www.bonanzasatrangi.com/pk/kids/kids-alive/2-piece/', 'name': '2 Piece'},{'url':'https://www.bonanzasatrangi.com/pk/kids/kids-alive/3-piece/', 'name': '3 Piece'}]
 
 def goToProductDetail(_productData,productUrl):
     #get colors and size of product
@@ -78,9 +81,9 @@ def processSitePageSoup(soup, brandName,gender):
                     'size': [],
                     'pictures' : [imageURL],
                     'stock' : "N/A",
-                    'price' : int(price[3:].strip().replace(',', '')),
-                    'discount' : int(price[3:].strip().replace(',', '')) - int(price[3:].strip().replace(',', '')),
-                    'salePrice' : int(price[3:].strip().replace(',', '')),
+                    'price' : float(price[3:].strip().replace(',', '')),
+                    'discount' : 0,
+                    'salePrice' : 0,
                     'description': '',
                     'tags': [gender,brandName],
                     'rating': random.choice(list(range(3, 5))),
@@ -99,28 +102,18 @@ def processSitePageSoup(soup, brandName,gender):
 def openSitePage(brandData, gender):
     # print("brandData " , brandData)
     for sitePage in brandData:
-        # print('sitePage ', sitePage)
+        print('sitePage ', sitePage)
         driver.get(sitePage['url'])
         soup = BeautifulSoup(driver.page_source, 'lxml')
         processSitePageSoup(soup, sitePage['name'],gender)
-
-# def ScrapSales():
-#     try:
-#         salesBrands = [{'blist': menSalesBrands, 'name': 'men'},{'blist': womenSalesBrands, 'name': 'women'}]
-#         for brand in salesBrands:
-#             openSitePage(brand['blist'], brand['name'])
-#     except Exception as el:
-#         print("Exception occured ", el)
-#         driver.close()
 
 def ScrapProducts():
     try:
         allBrands = [
             {'blist': womenBrands, 'name': 'women'},
-            {'blist': menBrands, 'name': 'men'},
-            {'blist': kidsBrands, 'name': 'kids'},
+            # {'blist': menBrands, 'name': 'men'},
+            # {'blist': kidsBrands, 'name': 'kids'},
         ]
-
         for brand in allBrands:
             openSitePage(brand['blist'], brand['name'])
     except Exception as el:
@@ -128,7 +121,8 @@ def ScrapProducts():
         driver.close()
 
 
-def getAllLinks(scrapeUrl):
+def getAllLinks():
+    scrapeUrl = "https://www.bonanzasatrangi.com/pk/men/"
     driver.get(scrapeUrl)
     soup = BeautifulSoup(driver.page_source,'lxml')
     brandSoup = soup.findAll('li', attrs={'class': 'subcategory'})[8:14]
@@ -150,8 +144,7 @@ def getAllLinks(scrapeUrl):
 try:
 
     ScrapProducts()
-    # scrapeUrl = "https://www.bonanzasatrangi.com/pk/men/"
-    # getAllLinks(scrapeUrl)
+    # getAllLinks()
 except Exception as el:
     print("Exception occured ", el)
     driver.close()

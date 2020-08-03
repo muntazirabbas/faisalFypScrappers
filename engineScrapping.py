@@ -4,20 +4,28 @@ from bs4 import BeautifulSoup
 import pymongo
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["fypDb"]
+# dbProducts = mydb.testCollection.find()
+
+# for prod in dbProducts:
+#     print('prod ', prod)
+
 from selenium import webdriver
+# chrome_options = webdriver.ChromeOptions()
+# prefs = {"profile.managed_default_content_settings.images": 2}
+# chrome_options.add_experimental_option("prefs", prefs)
+# driver = webdriver.Chrome("C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe",chrome_options=chrome_options)
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
-menBrands = [{'url': 'https://www.engine.com.pk/collections/men-casual-shirts', 'name': 'Shirts'},
+menBrands = [
+            {'url': 'https://www.engine.com.pk/collections/men-casual-shirts', 'name': 'Shirts'},
              {'url': 'https://www.engine.com.pk/collections/men-t-shirts', 'name': 'T-Shirts'},
+            {'url': 'https://www.engine.com.pk/collections/men-polo-shirts', 'name': 'Polo Shirts'},
              {'url': 'https://www.engine.com.pk/collections/men-jeans', 'name': 'Jeans'},
              {'url': 'https://www.engine.com.pk/collections/men-pants', 'name': 'Pants'},
              {'url': 'https://www.engine.com.pk/collections/men-trousers', 'name': 'Trousers'},
-             {'url': 'https://www.engine.com.pk/collections/men-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}, {'url': 'https://www.engine.com.pk/collections/men-sweaters', 'name': 'Sweaters'}, {'url': 'https://www.engine.com.pk/collections/men-jackets', 'name': 'Jackets'}, {'url': 'https://www.engine.com.pk/collections/men-glasses', 'name': 'Glasses'}, {'url': 'https://www.engine.com.pk/collections/men-footwear', 'name': 'Footwear'}]
-womenBrands = [{'url': 'https://www.engine.com.pk/collections/woven-top', 'name': 'Woven Tops'}, {'url': 'https://www.engine.com.pk/collections/women-kurties', 'name': 'Kurties'}, {'url': 'https://www.engine.com.pk/collections/women-bottoms', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/women-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/women-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/women-tights', 'name': 'Tights'}, {'url': 'https://www.engine.com.pk/collections/women-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}, {'url': 'https://www.engine.com.pk/collections/women-sweaters', 'name': 'Sweaters'}, {'url': 'https://www.engine.com.pk/collections/ladies-jacket', 'name': 'Jackets'}, {'url': 'https://www.engine.com.pk/collections/women-sleepwear', 'name': 'Sleepwear'}, {'url': 'https://www.engine.com.pk/collections/women-footwear', 'name': 'Footwear'}]
-kidsBrands =[
-    {'url': 'https://www.engine.com.pk/collections/t-shirt', 'name': 'T-Shirts'},
-    {'url': 'https://www.engine.com.pk/collections/boys-bottom', 'name': 'Jeans'},
-    {'url': 'https://www.engine.com.pk/collections/boys-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/boys-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/boys-shorts', 'name': 'Shorts'}, {'url': 'https://www.engine.com.pk/collections/boys-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}]
-
+             {'url': 'https://www.engine.com.pk/collections/men-hoodies-sweatshirts', 'name': 'Hoodies & Sweatshirts'}, {'url': 'https://www.engine.com.pk/collections/men-sweaters', 'name': 'Sweaters'}, {'url': 'https://www.engine.com.pk/collections/men-jackets', 'name': 'Jackets'}, {'url': 'https://www.engine.com.pk/collections/men-glasses', 'name': 'Glasses'}, {'url': 'https://www.engine.com.pk/collections/men-footwear', 'name': 'Footwear'}
+    ]
+womenBrands = [{'url': 'https://www.engine.com.pk/collections/women-shirts-blouses', 'name': 'Knit Tops'}, {'url': 'https://www.engine.com.pk/collections/woven-top', 'name': 'Woven Tops'}, {'url': 'https://www.engine.com.pk/collections/women-bottoms', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/women-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/women-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/women-tights', 'name': 'Tights'}, {'url': 'https://www.engine.com.pk/collections/women-footwear', 'name': 'shoes'}]
+kidsBrands = [{'url': 'https://www.engine.com.pk/collections/t-shirt', 'name': 'T-Shirts'}, {'url': 'https://www.engine.com.pk/collections/casual-shirt', 'name': 'Shirts'}, {'url': 'https://www.engine.com.pk/collections/boys-bottom', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/boys-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/boys-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/boys-shorts', 'name': 'Shorts'}, {'url': 'https://www.engine.com.pk/collections/girls-knit-top', 'name': 'Knit Tops'}, {'url': 'https://www.engine.com.pk/collections/woven-top-1', 'name': 'Woven Tops'}, {'url': 'https://www.engine.com.pk/collections/girls-bottom', 'name': 'Jeans'}, {'url': 'https://www.engine.com.pk/collections/girls-pants', 'name': 'Pants'}, {'url': 'https://www.engine.com.pk/collections/girls-trousers', 'name': 'Trousers'}, {'url': 'https://www.engine.com.pk/collections/girls-tights', 'name': 'Tights'}]
 
 
 def goToProductDetail(_productData,productUrl):
@@ -39,7 +47,7 @@ def goToProductDetail(_productData,productUrl):
         if(soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[1]):
             print('in color div')
             colorDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[1].findAll('option')
-    price = soup.find('span', attrs={'class': 'product-single__price'}).text.strip()[3:]
+    price = float(soup.find('span', attrs={'class': 'product-single__price'}).text.strip()[3:].replace(',',''))
     # print('price__',price)
     pictures = []
     colors = []
@@ -66,6 +74,7 @@ def goToProductDetail(_productData,productUrl):
     _productData['price'] = price
     print('product data ', _productData)
     mydb.freshProducts.insert_one(_productData)
+    # print(doc._id)
     print('................................................................................................')
 
 
@@ -116,32 +125,37 @@ def getAllLinks(scrapeUrl):
     webUrl = "https://www.engine.com.pk"
     driver.get(scrapeUrl)
     soup = BeautifulSoup(driver.page_source,'lxml')
-    menSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[2:12]
-    womenSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[14:25]
-    kidsSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[27:33]
+    # menSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[2:12]
+    # womenSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[14:25]
+    kidsBoysSoup = soup.findAll('ul', attrs={'class': 'meganav__list meganav__list--gutter'})[2].findAll("li")
+    # print('kboys ', kidsBoysSoup)
+    kidsGirlsSoup = soup.findAll('ul', attrs={'class': 'meganav__list meganav__list--gutter'})[5].findAll("li")
+    # print('kgirls ', kidsGirlsSoup)
+    kidsSoup = kidsBoysSoup + kidsGirlsSoup
 
-    for brand in menSoup:
-        # print("brand_", brand)
-        if(brand.find('a') != -1):
-            print(brand.find('a')['href'])
-            print(brand.find('a').text.strip())
-            menBrands.append(
-                        {
-                            'url': webUrl + brand.find('a')['href'],
-                            'name': brand.find('a').text.strip()
-                        })
-        print('........................................................................')
-    for brand in womenSoup:
-        # print("brand_", brand)
-        if(brand.find('a') != -1):
-            print(brand.find('a')['href'])
-            print(brand.find('a').text.strip())
-            womenBrands.append(
-                        {
-                            'url': webUrl + brand.find('a')['href'],
-                            'name': brand.find('a').text.strip()
-                        })
-        print('........................................................................')
+    # for brand in menSoup:
+    #     # print("brand_", brand)
+    #     if(brand.find('a') != -1):
+    #         print(brand.find('a')['href'])
+    #         print(brand.find('a').text.strip())
+    #         menBrands.append(
+    #                     {
+    #                         'url': webUrl + brand.find('a')['href'],
+    #                         'name': brand.find('a').text.strip()
+    #                     })
+    #     print('........................................................................')
+    # for brand in womenSoup:
+    #     # print("brand_", brand)
+    #     if(brand.find('a') != -1):
+    #         print(brand.find('a')['href'])
+    #         print(brand.find('a').text.strip())
+    #         womenBrands.append(
+    #                     {
+    #                         'url': webUrl + brand.find('a')['href'],
+    #                         'name': brand.find('a').text.strip()
+    #                     })
+    #     print('........................................................................')
+    print('kidsSoup ', kidsSoup)
     for brand in kidsSoup:
         # print("brand_", brand)
         if(brand.find('a') != -1):
@@ -153,16 +167,15 @@ def getAllLinks(scrapeUrl):
                             'name': brand.find('a').text.strip()
                         })
         print('........................................................................')
-    driver.close()
-    print('menBrands ', menBrands)
-    print('womenBrands ', womenBrands)
+    # print('menBrands ', menBrands)
+    # print('womenBrands ', womenBrands)
     print('kidsBrands ', kidsBrands)
 
 
 ##start point for getting all the links for men,women,kids brands urls and brand names
-
+#
 # try:
-#     scrapeUrl = "https://www.engine.com.pk/collections/men"
+#     scrapeUrl = "https://www.engine.com.pk/"
 #     getAllLinks(scrapeUrl)
 # except Exception as el:
 #     print("Error opening site  ", el)
@@ -172,9 +185,10 @@ def getAllLinks(scrapeUrl):
 #start point for scrapping all the data
 try:
     allBrands = [
-        # {'blist':kidsBrands, 'name': 'kids'},
-        # {'blist':womenBrands, 'name': 'women'},
-        {'blist':menBrands, 'name': 'men'} ]
+        {'blist': kidsBrands, 'name': 'kids'},
+        # {'blist': womenBrands, 'name': 'women'},
+        # {'blist': menBrands, 'name': 'men'}
+    ]
     for brand in allBrands:
        openSitePage(brand['blist'], brand['name'])
 except Exception as el:

@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d15581-9c00-4cf0-8814-afc626dadfc5" name="Default Changelist" comment="" />
+    <list default="true" id="32d15581-9c00-4cf0-8814-afc626dadfc5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/googleResultsFinder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/googleSearchResult.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazonScrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/amazonScrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beechtreeScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/beechtreeScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonanzaScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/bonanzaScraping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/breakoutScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/breakoutScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dinnersScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/dinnersScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edenrobeScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/edenrobeScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engineScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/engineScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furorjeansScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/furorjeansScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ideasGulAhmedScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/ideasGulAhmedScraping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/khaadiScraping1.py" beforeDir="false" afterPath="$PROJECT_DIR$/khaadiScraping1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leisureclubScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/leisureclubScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/limeLightScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/limeLightScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minneMinorsScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/minneMinorsScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monarkScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/monarkScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nishatScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/nishatScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outfittersScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/outfittersScraping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sapphireScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/sapphireScrapping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uniworthshopScrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/uniworthshopScrapping.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,30 +31,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$khaadiScraping1.coverage" NAME="khaadiScraping1 Coverage Results" MODIFIED="1592588214648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$minneMinorsScrapping.coverage" NAME="minneMinorsScrapping Coverage Results" MODIFIED="1592592770411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$khaadiScraping1.coverage" NAME="khaadiScraping1 Coverage Results" MODIFIED="1596347859364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$minneMinorsScrapping.coverage" NAME="minneMinorsScrapping Coverage Results" MODIFIED="1596431674062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$nishatScraping.coverage" NAME="nishatScraping Coverage Results" MODIFIED="1590948521104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$minnieMinorsScraping.coverage" NAME="minnieMinorsScraping Coverage Results" MODIFIED="1590949442731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$amazonScrapping.coverage" NAME="amazonScrapping Coverage Results" MODIFIED="1593520832931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../amazonScrapping fiverr" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$leisureclubScrapping.coverage" NAME="leisureclubScrapping Coverage Results" MODIFIED="1592990496116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScrapping.coverage" NAME="sapphireScrapping Coverage Results" MODIFIED="1592596759523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$monarkScrapping.coverage" NAME="monarkScrapping Coverage Results" MODIFIED="1592592922338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$beechtreeScrapping.coverage" NAME="beechtreeScrapping Coverage Results" MODIFIED="1592598050701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$ideasGulAhmedScraping.coverage" NAME="ideasGulAhmedScraping Coverage Results" MODIFIED="1592587056131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$bonanzaScraping.coverage" NAME="bonanzaScraping Coverage Results" MODIFIED="1592982706860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$breakoutScrapping.coverage" NAME="breakoutScrapping Coverage Results" MODIFIED="1592600372505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$amazonScrapping.coverage" NAME="amazonScrapping Coverage Results" MODIFIED="1593525634600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../amazonScrapping fiverr" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$leisureclubScrapping.coverage" NAME="leisureclubScrapping Coverage Results" MODIFIED="1596353153487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$callerNameScrapper.coverage" NAME="callerNameScrapper Coverage Results" MODIFIED="1595856303759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$googleResultsFinder.coverage" NAME="googleResultsFinder Coverage Results" MODIFIED="1595526145203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScrapping.coverage" NAME="sapphireScrapping Coverage Results" MODIFIED="1596436081744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$monarkScrapping.coverage" NAME="monarkScrapping Coverage Results" MODIFIED="1596362221055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$beechtreeScrapping.coverage" NAME="beechtreeScrapping Coverage Results" MODIFIED="1596445064020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$ideasGulAhmedScraping.coverage" NAME="ideasGulAhmedScraping Coverage Results" MODIFIED="1596347266853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$amazonScrapper.coverage" NAME="amazonScrapper Coverage Results" MODIFIED="1595254578031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$bonanzaScraping.coverage" NAME="bonanzaScraping Coverage Results" MODIFIED="1596202363034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$breakoutScrapping.coverage" NAME="breakoutScrapping Coverage Results" MODIFIED="1596199865827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScraping.coverage" NAME="sapphireScraping Coverage Results" MODIFIED="1590947655976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$furorjeansScrapping.coverage" NAME="furorjeansScrapping Coverage Results" MODIFIED="1592582653638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$uniworthshopScrapping.coverage" NAME="uniworthshopScrapping Coverage Results" MODIFIED="1592597708885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$dinnersScrapping.coverage" NAME="dinnersScrapping Coverage Results" MODIFIED="1592983200205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$furorjeansScrapping.coverage" NAME="furorjeansScrapping Coverage Results" MODIFIED="1596193117157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$uniworthshopScrapping.coverage" NAME="uniworthshopScrapping Coverage Results" MODIFIED="1596365380449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$dinnersScrapping.coverage" NAME="dinnersScrapping Coverage Results" MODIFIED="1596216082197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$whatsonSaleScrapping.coverage" NAME="whatsonSaleScrapping Coverage Results" MODIFIED="1590947099712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$edenrobeScrapping.coverage" NAME="edenrobeScrapping Coverage Results" MODIFIED="1592580376042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$edenrobeScrapping.coverage" NAME="edenrobeScrapping Coverage Results" MODIFIED="1596195181827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$limelightScraping.coverage" NAME="limelightScraping Coverage Results" MODIFIED="1590950095748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../junaidFypScraping" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$sapphireScraping__1_.coverage" NAME="sapphireScraping (1) Coverage Results" MODIFIED="1591075622108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$limeLightScrapping.coverage" NAME="limeLightScrapping Coverage Results" MODIFIED="1592592677254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$outfittersScraping.coverage" NAME="outfittersScraping Coverage Results" MODIFIED="1592596418418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$engineScrapping.coverage" NAME="engineScrapping Coverage Results" MODIFIED="1592991788471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/zia_fyp_scraping$nishatScrapping.coverage" NAME="nishatScrapping Coverage Results" MODIFIED="1592987181692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$limeLightScrapping.coverage" NAME="limeLightScrapping Coverage Results" MODIFIED="1596433948063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$outfittersScraping.coverage" NAME="outfittersScraping Coverage Results" MODIFIED="1596445345859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$engineScrapping.coverage" NAME="engineScrapping Coverage Results" MODIFIED="1596190502421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$googleSearchResult.coverage" NAME="googleSearchResult Coverage Results" MODIFIED="1595526085800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/zia_fyp_scraping$nishatScrapping.coverage" NAME="nishatScrapping Coverage Results" MODIFIED="1596444349647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/zia_fyp_scraping$beechtreeScraping.coverage" NAME="beechtreeScraping Coverage Results" MODIFIED="1591073527706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
   <component name="DatabaseView">
@@ -116,37 +142,42 @@
     <session id="-1483754001">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.29" value="2" />
+          <entry key="project.open.time.29" value="3" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="google-cookie" value="1" />
           <entry key="log" value="1" />
-          <entry key="py" value="115" />
+          <entry key="py" value="184" />
           <entry key="pyi" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="115" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="183" />
           <entry key="PythonStub" value="1" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="12213" />
+          <entry key="py" value="22440" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="12213" />
+          <entry key="Python" value="22440" />
         </counts>
       </usages-collector>
     </session>
@@ -154,61 +185,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="101" column="89" selection-start-line="101" selection-start-column="89" selection-end-line="101" selection-end-column="89" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beechtreeScrapping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="59" column="61" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engineScrapping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/outfittersScraping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nishatScrapping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="57" column="56" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4097">
-              <caret line="241" selection-start-line="241" selection-end-line="241" />
+            <state relative-caret-position="89">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#9858#10376#0" />
+                <element signature="e#13211#15659#0" />
+                <marker date="1596445368802" expanded="true" signature="15677:16074" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,36 +209,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>men</find>
-      <find>kid</find>
-      <find>Boys Round Neck T-Shirt In WHITE SKU: KBA0185- WHITE</find>
-      <find>single-option-selector single-option-selector-product-template product-form__input</find>
-      <find>y/kids/boys/casual-wasitcoat/</find>
-      <find>y-dobby-formal-shirt-cm-yd-2762-bg</find>
-      <find>b.pk/women/outerwear/coat.html</find>
-      <find>sitePage  {'url':</find>
-      <find>hshop.com/collections/regular-fit-stripe-shirts'</find>
-      <find>ata_____</find>
-      <find>product data  {'i</find>
-      <find>li</find>
-      <find>&lt;li</find>
-      <find>s-result-item celwidget</find>
-      <find>a-popover-content</find>
-      <find>s-result-item  celwidget</find>
-      <find>ASUS Chromebook Flip C302 2-In-1 Laptop- 12.5” Full HD 4-Way NanoEdge Touchscreen, Intel Core M5, 4GB RAM, 64GB Flas</find>
-      <find>select</find>
-      <find>product url</find>
-      <find>conta</find>
-      <find>contains text__</find>
-      <find>pagelink ______</find>
-      <find>pagelink _____________</find>
-      <find>pagelink _________</find>
-      <find>pagelin</find>
-      <find>roduct data</find>
-      <find>products count  24</find>
-      <find>pagelink ____</find>
+      <find>&lt;ul class=&quot;site-nav-dropdown&quot;&gt;</find>
+      <find>product data  {'id</find>
+      <find>site</find>
+      <find>top</find>
+      <find>time.</find>
       <find>product data</find>
-      <find>split</find>
+      <find>https://www.leisureclub.pk/kids/girls/outerwear.html</find>
+      <find>shorts</find>
+      <find>waist</find>
+      <find>polo-s</find>
+      <find>polo</find>
+      <find>site ur</find>
+      <find>getA</find>
+      <find>perfume</find>
+      <find>data_____</find>
+      <find>siteP</find>
+      <find>mb-sub-list</find>
+      <find>Sleep</find>
+      <find>ys/Tops/Shirts/c/BOYS_TOPS_SHIRTS</find>
+      <find>nap</find>
+      <find>baby</find>
+      <find>cata</find>
+      <find>e.pk//collections/western-tights</find>
+      <find>home</find>
+      <find>time.s</find>
+      <find>price</find>
+      <find>/pk/luxury-pret/pair-of-pants.html</find>
+      <find>data:image/webp;base64</find>
+      <find>sitePage</find>
+      <find>site url</find>
     </findStrings>
     <replaceStrings>
       <replace>https://pk.khaadi.com/</replace>
@@ -273,25 +258,30 @@
         <option value="$PROJECT_DIR$/../junaidFypScraping/limelightScraping.py" />
         <option value="$PROJECT_DIR$/../beechtreeScraping.py" />
         <option value="$PROJECT_DIR$/../sapphireScraping.py" />
-        <option value="$PROJECT_DIR$/edenrobeScrapping.py" />
-        <option value="$PROJECT_DIR$/furorjeansScrapping.py" />
-        <option value="$PROJECT_DIR$/ideasGulAhmedScraping.py" />
-        <option value="$PROJECT_DIR$/khaadiScraping1.py" />
-        <option value="$PROJECT_DIR$/limeLightScrapping.py" />
-        <option value="$PROJECT_DIR$/minneMinorsScrapping.py" />
-        <option value="$PROJECT_DIR$/monarkScrapping.py" />
-        <option value="$PROJECT_DIR$/sapphireScrapping.py" />
-        <option value="$PROJECT_DIR$/uniworthshopScrapping.py" />
-        <option value="$PROJECT_DIR$/beechtreeScrapping.py" />
-        <option value="$PROJECT_DIR$/bonanzaScraping.py" />
-        <option value="$PROJECT_DIR$/breakoutScrapping.py" />
-        <option value="$PROJECT_DIR$/dinnersScrapping.py" />
-        <option value="$PROJECT_DIR$/outfittersScraping.py" />
-        <option value="$PROJECT_DIR$/nishatScrapping.py" />
-        <option value="$PROJECT_DIR$/leisureclubScrapping.py" />
-        <option value="$PROJECT_DIR$/engineScrapping.py" />
         <option value="$USER_HOME$/Desktop/amazonPythonScrapper.py" />
         <option value="$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py" />
+        <option value="$PROJECT_DIR$/amazonScrapper.py" />
+        <option value="$PROJECT_DIR$/googleSearchResult.py" />
+        <option value="$PROJECT_DIR$/googleResultsFinder.py" />
+        <option value="$PROJECT_DIR$/../callerNameScrapper.py" />
+        <option value="$PROJECT_DIR$/engineScrapping.py" />
+        <option value="$PROJECT_DIR$/furorjeansScrapping.py" />
+        <option value="$PROJECT_DIR$/edenrobeScrapping.py" />
+        <option value="$PROJECT_DIR$/breakoutScrapping.py" />
+        <option value="$PROJECT_DIR$/bonanzaScraping.py" />
+        <option value="$PROJECT_DIR$/dinnersScrapping.py" />
+        <option value="$PROJECT_DIR$/testing.py" />
+        <option value="$PROJECT_DIR$/leisureclubScrapping.py" />
+        <option value="$PROJECT_DIR$/khaadiScraping1.py" />
+        <option value="$PROJECT_DIR$/ideasGulAhmedScraping.py" />
+        <option value="$PROJECT_DIR$/monarkScrapping.py" />
+        <option value="$PROJECT_DIR$/uniworthshopScrapping.py" />
+        <option value="$PROJECT_DIR$/minneMinorsScrapping.py" />
+        <option value="$PROJECT_DIR$/limeLightScrapping.py" />
+        <option value="$PROJECT_DIR$/sapphireScrapping.py" />
+        <option value="$PROJECT_DIR$/nishatScrapping.py" />
+        <option value="$PROJECT_DIR$/beechtreeScrapping.py" />
+        <option value="$PROJECT_DIR$/outfittersScraping.py" />
       </list>
     </option>
   </component>
@@ -302,9 +292,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="1" />
-    <option name="width" value="1487" />
-    <option name="height" value="759" />
+    <option name="x" value="78" />
+    <option name="y" value="9" />
+    <option name="width" value="1521" />
+    <option name="height" value="605" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -312,6 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,11 +315,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -345,30 +337,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.amazonScrapping">
-    <configuration name="amazonScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="zia_fyp_scraping" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../amazonScrapping fiverr" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dinnersScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.outfittersScraping">
+    <configuration name="beechtreeScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="zia_fyp_scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -381,7 +351,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dinnersScrapping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beechtreeScrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -390,7 +360,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="engineScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="limeLightScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="zia_fyp_scraping" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -403,29 +373,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/engineScrapping.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="leisureclubScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="zia_fyp_scraping" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leisureclubScrapping.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/limeLightScrapping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -456,20 +404,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="outfittersScraping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="zia_fyp_scraping" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/outfittersScraping.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sapphireScrapping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="zia_fyp_scraping" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sapphireScrapping.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.dinnersScrapping" />
+      <item itemvalue="Python.limeLightScrapping" />
+      <item itemvalue="Python.sapphireScrapping" />
       <item itemvalue="Python.nishatScrapping" />
-      <item itemvalue="Python.leisureclubScrapping" />
-      <item itemvalue="Python.engineScrapping" />
-      <item itemvalue="Python.amazonScrapping" />
+      <item itemvalue="Python.beechtreeScrapping" />
+      <item itemvalue="Python.outfittersScraping" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.amazonScrapping" />
-        <item itemvalue="Python.engineScrapping" />
-        <item itemvalue="Python.leisureclubScrapping" />
+        <item itemvalue="Python.outfittersScraping" />
+        <item itemvalue="Python.beechtreeScrapping" />
         <item itemvalue="Python.nishatScrapping" />
-        <item itemvalue="Python.dinnersScrapping" />
+        <item itemvalue="Python.sapphireScrapping" />
+        <item itemvalue="Python.limeLightScrapping" />
       </list>
     </recent_temporary>
   </component>
@@ -499,21 +491,21 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14588688" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12789203" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5893316" visible="true" weight="0.29475102" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5893316" visible="true" weight="0.7631225" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32974428" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.41066837" side_tool="true" weight="0.6958277" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32839838" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.41066837" side_tool="true" weight="0.6958277" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3287483" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5141319" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -550,6 +542,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dinnersScrapping.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../suggested_bach.py">
@@ -609,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/whatsonSaleScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../sapphireScraping.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -630,102 +626,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edenrobeScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="138" selection-start-line="138" selection-end-line="140" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/khaadiScraping1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/limeLightScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minneMinorsScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/debug.log" />
-    <entry file="file://$PROJECT_DIR$/sapphireScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uniworthshopScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="104" column="15" selection-start-line="104" selection-start-column="15" selection-end-line="104" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ideasGulAhmedScraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="113" column="13" lean-forward="true" selection-start-line="94" selection-start-column="11" selection-end-line="113" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/monarkScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="49" column="41" selection-start-line="49" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bonanzaScraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1716">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dinnersScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leisureclubScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/amazonPythonScrapper.py" />
-    <entry file="file://$PROJECT_DIR$/breakoutScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/furorjeansScrapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="47" column="33" selection-start-line="47" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4097">
@@ -733,43 +638,244 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beechtreeScrapping.py">
+    <entry file="file://$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="59" column="61" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="61" />
+        <state relative-caret-position="-57">
+          <caret line="128" column="42" lean-forward="true" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/whatsonSaleScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazonScrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.google-cookie">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../accessWireScraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleSearchResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="42" selection-end-line="61" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/support/wait.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/googleResultsFinder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/selenium/webdriver/chrome/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/engineScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="144">
+          <caret line="27" column="905" lean-forward="true" selection-start-line="27" selection-start-column="905" selection-end-line="27" selection-end-column="905" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/furorjeansScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bonanzaScraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="105" column="18" lean-forward="true" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../callerNameScrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="1" selection-end-line="4" />
+          <folding>
+            <marker date="1595856303716" expanded="true" signature="3399:3401" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ideasGulAhmedScraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="125" column="31" lean-forward="true" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
+          <folding>
+            <element signature="e#1393#2397#0" />
+            <element signature="e#1523#2403#0" />
+            <element signature="e#2457#4605#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/breakoutScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outfittersScraping.py">
+    <entry file="file://$PROJECT_DIR$/edenrobeScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="9" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniworthshopScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="180" column="23" lean-forward="true" selection-start-line="180" selection-start-column="23" selection-end-line="180" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leisureclubScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dinnersScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="103" lean-forward="true" selection-start-line="7" selection-start-column="103" selection-end-line="7" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/monarkScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khaadiScraping1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/limeLightScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#4272#5459#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sapphireScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="69" column="52" lean-forward="true" selection-end-line="102" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minneMinorsScrapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="31" selection-start-line="31" selection-end-line="38" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1596432317499" expanded="true" signature="6404:6405" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nishatScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="57" column="56" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="56" />
+        <state relative-caret-position="193">
+          <caret line="23" column="89" lean-forward="true" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../amazonScrapping fiverr/amazonScrapping.py">
+    <entry file="file://$PROJECT_DIR$/beechtreeScrapping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="101" column="89" selection-start-line="101" selection-start-column="89" selection-end-line="101" selection-end-column="89" />
+        <state relative-caret-position="118">
+          <caret line="26" column="79" lean-forward="true" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outfittersScraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#9858#10376#0" />
+            <element signature="e#13211#15659#0" />
+            <marker date="1596445368802" expanded="true" signature="15677:16074" ph="..." />
           </folding>
         </state>
       </provider>

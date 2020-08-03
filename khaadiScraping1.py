@@ -6,17 +6,12 @@ from selenium import webdriver
 import pymongo
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["fypDb"]
+# dbProducts = mydb.freshProducts.find({'mainBrand' : 'khaadi'})
+
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
-womenBrands = [ {'url': 'https://pk.khaadi.com/new-in.html?material=227', 'name': 'brosha'}, {'url': 'https://pk.khaadi.com/new-in.html?material=229', 'name': 'raw silk'}, {'url': 'https://pk.khaadi.com/new-in.html?material=231', 'name': 'denim'}, {'url': 'https://pk.khaadi.com/new-in.html?material=232', 'name': 'viscose'}, {'url': 'https://pk.khaadi.com/new-in.html?material=233', 'name': 'khaddar'}, {'url': 'https://pk.khaadi.com/new-in.html?material=234', 'name': 'marina'}, {'url': 'https://pk.khaadi.com/new-in.html?material=236', 'name': 'poly viscose'}, {'url': 'https://pk.khaadi.com/new-in.html?material=237', 'name': 'sateen'}, {'url': 'https://pk.khaadi.com/new-in.html?material=238', 'name': 'jacquard'}, {'url': 'https://pk.khaadi.com/new-in.html?material=239', 'name': 'silk'}, {'url': 'https://pk.khaadi.com/new-in.html?material=245', 'name': 'chiffon silk'}, {'url': 'https://pk.khaadi.com/new-in.html?material=246', 'name': 'chiffon'}, {'url': 'https://pk.khaadi.com/new-in.html?material=247', 'name': 'organza'}, {'url': 'https://pk.khaadi.com/new-in.html?material=248', 'name': 'handwoven'}, {'url': 'https://pk.khaadi.com/new-in.html?material=250', 'name': 'default'}, {'url': 'https://pk.khaadi.com/new-in.html?material=251', 'name': 'hand woven'}, {'url': 'https://pk.khaadi.com/new-in.html?material=253', 'name': 'woolen'}, {'url': 'https://pk.khaadi.com/new-in.html?material=254', 'name': 'acrylic'}, {'url': 'https://pk.khaadi.com/new-in.html?material=255', 'name': 'polyester'}, {'url': 'https://pk.khaadi.com/new-in.html?material=256', 'name': 'cotton stretch'}, {'url': 'https://pk.khaadi.com/new-in.html?material=257', 'name': 'schiffli'}, {'url': 'https://pk.khaadi.com/new-in.html?material=258', 'name': 'cross hatch denim'}, {'url': 'https://pk.khaadi.com/new-in.html?material=260', 'name': 'cross hatch'}, {'url': 'https://pk.khaadi.com/new-in.html?material=261', 'name': 'velvet'}, {'url': 'https://pk.khaadi.com/new-in.html?material=264', 'name': 'metallica'}, {'url': 'https://pk.khaadi.com/new-in.html?material=272', 'name': 'indian chiffon'}, {'url': 'https://pk.khaadi.com/new-in.html?material=273', 'name': 'tissue silk'}, {'url': 'https://pk.khaadi.com/new-in.html?material=274', 'name': 'viscose silk'}, {'url': 'https://pk.khaadi.com/new-in.html?material=275', 'name': 'polyester net'}, {'url': 'https://pk.khaadi.com/new-in.html?material=280', 'name': 'light khaddar'}, {'url': 'https://pk.khaadi.com/new-in.html?material=281', 'name': 'duck'}, {'url': 'https://pk.khaadi.com/new-in.html?material=282', 'name': 'dobby'}, {'url': 'https://pk.khaadi.com/new-in.html?material=284', 'name': 'oak silk'}, {'url': 'https://pk.khaadi.com/new-in.html?material=285', 'name': 'zari net'}, {'url': 'https://pk.khaadi.com/new-in.html?material=287', 'name': 'flannel'}, {'url': 'https://pk.khaadi.com/new-in.html?material=289', 'name': 'cotton net'}, {'url': 'https://pk.khaadi.com/new-in.html?material=290', 'name': 'self jacquard'}, {'url': 'https://pk.khaadi.com/new-in.html?material=291', 'name': 'silk viscose'}, {'url': 'https://pk.khaadi.com/new-in.html?material=297', 'name': 'plastic'},{'url': 'https://pk.khaadi.com/new-in.html?material=219', 'name': 'cambric'},]
-kidsBrands = [{'url': 'https://pk.khaadi.com/kids.html?material=216', 'name': 'poplin'}, {'url': 'https://pk.khaadi.com/kids.html?material=218', 'name': 'jersey'}, {'url': 'https://pk.khaadi.com/kids.html?material=219', 'name': 'cambric'}, {'url': 'https://pk.khaadi.com/kids.html?material=231', 'name': 'denim'}, {'url': 'https://pk.khaadi.com/kids.html?material=232', 'name': 'viscose'}, {'url': 'https://pk.khaadi.com/kids.html?material=233', 'name': 'khaddar'}, {'url': 'https://pk.khaadi.com/kids.html?material=250', 'name': 'default'}, {'url': 'https://pk.khaadi.com/kids.html?material=251', 'name': 'hand woven'}, {'url': 'https://pk.khaadi.com/kids.html?material=261', 'name': 'velvet'}, {'url': 'https://pk.khaadi.com/kids.html?material=287', 'name': 'flannel'}, {'url': 'https://pk.khaadi.com/kids.html?material=306', 'name': 'corduroy'}, {'url': 'https://pk.khaadi.com/kids.html?material=307', 'name': 'terry'}, {'url': 'https://pk.khaadi.com/kids.html?material=308', 'name': 'twill'}, {'url': 'https://pk.khaadi.com/kids.html?material=313', 'name': 'cotton yd'}, {'url': 'https://pk.khaadi.com/kids.html?material=314', 'name': 'lycra jersey'}]
+kidsBrands =  [{'url': 'https://pk.khaadi.com/kids/girls-eastern/kurta.html', 'name': 'Kurta'}, {'url': 'https://pk.khaadi.com/kids/girls-eastern/pants.html', 'name': 'Pants'}, {'url': 'https://pk.khaadi.com/kids/girls-eastern/formal-suits.html', 'name': 'Formal Suits'}, {'url': 'https://pk.khaadi.com/kids/girls-western/blouses.html', 'name': 'Blouses'}, {'url': 'https://pk.khaadi.com/kids/girls-western/dresses.html', 'name': 'Dresses'}, {'url': 'https://pk.khaadi.com/kids/girls-western/tights.html', 'name': 'Tights'}, {'url': 'https://pk.khaadi.com/kids/girls-western/pants.html', 'name': 'Pants'}, {'url': 'https://pk.khaadi.com/kids/girls-western/denim.html', 'name': 'Denim'}, {'url': 'https://pk.khaadi.com/kids/girls-western/t-shirts.html', 'name': 'T Shirts'}, {'url': 'https://pk.khaadi.com/kids/girls-western/jogger-pants.html', 'name': 'Jogger Pants'}, {'url': 'https://pk.khaadi.com/kids/boys-eastern/kurta.html', 'name': 'Kurta'}, {'url': 'https://pk.khaadi.com/kids/boys-eastern/waistcoat.html', 'name': 'Waistcoat'}, {'url': 'https://pk.khaadi.com/kids/boys-western/t-shirts.html', 'name': 'T Shirts'}, {'url': 'https://pk.khaadi.com/kids/boys-western/shirts.html', 'name': 'Shirts'}, {'url': 'https://pk.khaadi.com/kids/boys-western/jogger-pants.html', 'name': 'Jogger Pants'}, {'url': 'https://pk.khaadi.com/kids/boys-western/polo-shirts.html', 'name': 'Polo Shirts'}, {'url': 'https://pk.khaadi.com/kids/boys-western/briefs.html', 'name': 'briefs'}, {'url': 'https://pk.khaadi.com/kids/boys-western/boys-socks.html', 'name': 'Socks'}, {'url': 'https://pk.khaadi.com/kids/essentials-accessories/socks.html', 'name': 'Socks'}]
+womenBrands =  [{'url': 'https://pk.khaadi.com/unstitched/festive-eid-collection.html', 'name': 'Festive Eid Collection'}, {'url': 'https://pk.khaadi.com/unstitched/spring-collection.html', 'name': 'Spring Collection'}, {'url': 'https://pk.khaadi.com/unstitched/summer-collection.html', 'name': 'Summer Collection'}, {'url': 'https://pk.khaadi.com/unstitched/luxury-collection.html', 'name': 'Luxury Collection'}, {'url': 'https://pk.khaadi.com/unstitched.html?material=215', 'name': 'Lawn'}, {'url': 'https://pk.khaadi.com/unstitched.html?material=238', 'name': 'Jacquard'}, {'url': 'https://pk.khaadi.com/unstitched.html?material=257', 'name': 'Schiffli'}, {'url': 'https://pk.khaadi.com/unstitched.html?size=31', 'name': 'Two Piece'}, {'url': 'https://pk.khaadi.com/unstitched.html?size=32', 'name': 'Three Piece'}, {'url': 'https://pk.khaadi.com/ready-to-wear/pret/basic-kurta.html', 'name': 'Basic Kurta'}, {'url': 'https://pk.khaadi.com/ready-to-wear/pret/printed-kurta.html', 'name': 'Printed Kurta'}, {'url': 'https://pk.khaadi.com/ready-to-wear/pret/kurta-with-dupatta.html', 'name': 'Kurta with Dupatta'}, {'url': 'https://pk.khaadi.com/ready-to-wear/pret/kurta-with-pants.html', 'name': 'Kurta With Pants'}, {'url': 'https://pk.khaadi.com/ready-to-wear/pret/full-suit.html', 'name': 'Full Suit'}, {'url': 'https://pk.khaadi.com/ready-to-wear/pret/embroidered-kurta.html', 'name': 'Embroidered Kurta'}, {'url': 'https://pk.khaadi.com/ready-to-wear/khaas/semi-formals.html', 'name': 'Semi Formals'}, {'url': 'https://pk.khaadi.com/ready-to-wear/bottoms/tights.html', 'name': 'Tights'}, {'url': 'https://pk.khaadi.com/ready-to-wear/bottoms/pants.html', 'name': 'Pants'}, {'url': 'https://pk.khaadi.com/ready-to-wear/bottoms/shalwar.html', 'name': 'Shalwar'}, {'url': 'https://pk.khaadi.com/ready-to-wear/western/t-shirts.html', 'name': 'T Shirts'}, {'url': 'https://pk.khaadi.com/ready-to-wear/western/tunics.html', 'name': 'Tunics'}, {'url': 'https://pk.khaadi.com/ready-to-wear/western/pants.html', 'name': 'Pants'}, {'url': 'https://pk.khaadi.com/ready-to-wear/western/stoles.html', 'name': 'Stoles'}, {'url': 'https://pk.khaadi.com/ready-to-wear/western/tops.html', 'name': 'Tops'}, {'url': 'https://pk.khaadi.com/ready-to-wear/western/dresses.html', 'name': 'Dresses'}]
 
-womenSalesBrands = [
-    {'url': 'https://pk.khaadi.com/sale.html?cat=1391', 'name': 'Pret'},
-]
-
-kidsSalesBrands = [
-    {'url': 'https://pk.khaadi.com/sale.html?cat=1394', 'name': 'Mix'},
-]
 
 def goToProductDetail(_productData,productUrl, collectionName):
     #get colors and size of product
@@ -32,7 +27,7 @@ def goToProductDetail(_productData,productUrl, collectionName):
     except Exception as el:
         print("product detail exception  ", el)
 
-    price = int(soup.find('span', attrs={'class': 'price'}).text.strip()[3:].replace(',', ''))
+    price = float(soup.find('span', attrs={'class': 'price'}).text.strip()[3:].replace(',', ''))
     colors = []
     size = []
     # print('color div _____ ', colorDiv)
@@ -48,8 +43,12 @@ def goToProductDetail(_productData,productUrl, collectionName):
     _productData['colors'] = colors
     _productData['size'] = size
     _productData['price'] = price
-    _productData['salePrice'] = price
     print('product data ', _productData)
+
+    # if(any((_productData['name'] == product['name'] for product in dbProducts))):
+    #     print(('existing product !!!!!!!!!!!!!!!!!!!!!!!!!!!!!'))
+    # else:
+    #     print('new product ================' )
     mydb[collectionName].insert_one(_productData)
     print('................................................................................................')
 
@@ -93,44 +92,47 @@ def processBrands(brandArray,type, collectionName):
         khaadi = soup.select('li[class*="item product product-item"]')
         getBrandData(khaadi,data['name'],type, collectionName)
 
-
-def getAllLinks(_url):
-    driver.get(_url)
+def getAllLinks():
+    scrapeUrl = 'https://pk.khaadi.com/'
+    driver.get(scrapeUrl)
     soup = BeautifulSoup(driver.page_source, 'lxml')
-    allUrls = soup.findAll('a', attrs={'class': 'mgs-ajax-layer-item'})[8:23]
-    myarray = []
-    for brand in allUrls:
-        if(brand['href']):
-            linkUrl = brand['href']
-            name = brand.contents[0].strip()
-            print('anchor____', linkUrl)
-            print('name______', name)
-            myarray.append(
-                        {
-                            'url': linkUrl,
-                            'name': name
-                        })
-        print('........................................................................')
-    driver.close()
-    print('womenBrands ', myarray)
+    womenUnstichedSoup = soup.find('ul', attrs={'id': "mobile-menu-54-1"}).findAll('li', attrs={'class' : 'level2'})
+    print('womenUns ' , womenUnstichedSoup)
+    womenReadydSoup = soup.find('ul', attrs={'id': "mobile-menu-53-1"}).findAll('li', attrs={'class' : 'level2'})
+    kidsSoup = soup.find('ul', attrs={'id': "mobile-menu-55-1"}).findAll('li', attrs={'class' : 'level2'})
+    womenSoup = womenUnstichedSoup + womenReadydSoup
+    for brand in kidsSoup:
+        # print('brand ', brand)
+        if (brand.find('a') != -1):
+            # print(brand.find('a')['href'])
+            # print(brand.find('a').text.strip())
+            kidsBrands.append(
+                {
+                    'url': brand.find('a')['href'],
+                    'name': brand.find('a').text.strip()
+                })
+    for brand in womenSoup:
+        # print('brand ', brand)
+        if (brand.find('a') != -1):
+            # print(brand.find('a')['href'])
+            # print(brand.find('a').text.strip())
+            womenBrands.append(
+                {
+                    'url': brand.find('a')['href'],
+                    'name': brand.find('a').text.strip()
+                })
 
-def ScrapSales(collectionName):
-    try:
-        salesBrands = [
-            {'blist': womenSalesBrands, 'name': 'women'},
-            {'blist': kidsSalesBrands, 'name': 'kids'},
-        ]
-        for brand in salesBrands:
-            processBrands(brand['blist'], brand['name'],collectionName)
-    except Exception as el:
-        print("Exception occured ", el)
-        driver.close()
+    print('kidsBrands = ', kidsBrands)
+    print('womenBrands = ', womenBrands)
+
+    driver.close()
 
 def ScrapProducts(collectionName):
     try:
         allBrands = [
-            {'blist': kidsBrands, 'name': 'kids'},
+
             {'blist': womenBrands, 'name': 'women'},
+            {'blist': kidsBrands, 'name': 'kids'},
         ]
         for brand in allBrands:
             processBrands(brand['blist'], brand['name'],collectionName)
@@ -140,10 +142,8 @@ def ScrapProducts(collectionName):
 
 try:
 
-    # ScrapSales('sales')
     ScrapProducts('freshProducts')
-    # scrapeUrl = 'https://pk.khaadi.com/kids.html'
-    # getAllLinks(scrapeUrl)
+    # getAllLinks()
 except Exception as el:
     print("Exception occured ", el)
     driver.close()

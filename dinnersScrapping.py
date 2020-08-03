@@ -7,22 +7,17 @@ mydb = myclient["fypDb"]
 from selenium import webdriver
 driver = webdriver.Chrome('C:/Users/MUNTAZIR/Downloads/Compressed/chromedriver_win32/chromedriver.exe')
 menBrands = [
+            {'url': 'https://diners.com.pk/collections/jeans', 'name': 'Jeans'},
             {'url': 'https://diners.com.pk/collections/shirts', 'name': 'Shirts'},
-             {'url': 'https://diners.com.pk/collections/trousers', 'name': 'Trousers'},
-             {'url': 'https://diners.com.pk/collections/suiting-blazers', 'name': 'Blazzers'},
-             {'url': 'https://diners.com.pk/collections/t-shirts', 'name': 'T-Shirts'},
+            {'url': 'https://diners.com.pk/collections/trousers', 'name': 'Trousers'},
+            {'url': 'https://diners.com.pk/collections/suiting-blazers', 'name': 'Blazzers'},
+            {'url': 'https://diners.com.pk/collections/t-shirts', 'name': 'T-Shirts'},
+    {'url': 'https://diners.com.pk/collections/shorts', 'name': 'Shorts'},
+    {'url': 'https://diners.com.pk/collections/ethnic-wear', 'name': 'Ethnic'},
 ]
 
-womenBrands = [{'url': 'https://diners.com.pk/collections/ready-to-wear', 'name': 'Ready to Wear'},
-               {'url': 'https://diners.com.pk/collections/unstitched', 'name': 'Unstitched'},
-               {'url': 'https://diners.com.pk/collections/sohaye-trousers', 'name': 'Bottoms'},
-               ]
-kidsBrands =[
-    {'url': 'https://diners.com.pk/collections/boys', 'name': 'Mix'},
-    {'url': 'https://diners.com.pk/collections/girls', 'name': 'Mix'},
-
-]
-
+kidsBrands = [{'url': 'https://diners.com.pk//collections/boys-t-shirts', 'name': 'T-Shirts'}, {'url': 'https://diners.com.pk/https://diners.com.pk/collections/boy-shirts', 'name': 'Shirts'}, {'url': 'https://diners.com.pk//collections/kurta-boy', 'name': 'Kurta Shalwar'}, {'url': 'https://diners.com.pk//collections/polo', 'name': 'Polo'}, {'url': 'https://diners.com.pk//collections/jeans-1', 'name': 'Jeans'}, {'url': 'https://diners.com.pk//collections/chinos-boys', 'name': 'Chinos'}, {'url': 'https://diners.com.pk//collections/shalwar-boy', 'name': 'Shalwar'}, {'url': 'https://diners.com.pk//collections/suit', 'name': 'Suit'}, {'url': 'https://diners.com.pk//collections/shirts-girls', 'name': 'Shirts'}, {'url': 'https://diners.com.pk//collections/t-shirts-girl', 'name': 'T-shirt'}, {'url': 'https://diners.com.pk//collections/girls-kurti', 'name': 'Kurti'}, {'url': 'https://diners.com.pk//collections/frocks', 'name': 'Frocks'}, {'url': 'https://diners.com.pk//collections/jeans-girl', 'name': 'Jeans'}, {'url': 'https://diners.com.pk//collections/tights-girl', 'name': 'Tights'}, {'url': 'https://diners.com.pk//collections/girls-trouser', 'name': 'Trousers'}, {'url': 'https://diners.com.pk//collections/kurti-teen-girl', 'name': 'Kurti'}, {'url': 'https://diners.com.pk//collections/shirts-teen-girls', 'name': 'Shirts'}, {'url': 'https://diners.com.pk//collections/t-shirts-teen-girl', 'name': 'T-shirts'}, {'url': 'https://diners.com.pk//collections/frocks-teen-girl', 'name': 'Frocks'}]
+womenBrands = [{'url': 'https://diners.com.pk/collections/ready-to-wear', 'name': 'Ready to Wear'},{'url': 'https://diners.com.pk/collections/unstitched', 'name': 'Unstitched'},{'url': 'https://diners.com.pk/collections/sohaye-trousers', 'name': 'Bottoms'},]
 
 def colorAssignment(color):
     if "black" in color:
@@ -49,43 +44,6 @@ def colorAssignment(color):
         return "grey"
     else:
         return "other"
-
-def goToProductDetail(_productData,productUrl):
-    #get colors and size of product
-    print('product url ', productUrl)
-    driver.get(productUrl)
-    soup = BeautifulSoup(driver.page_source, 'lxml')
-    # print("detail soup ",soup)
-    sizeDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[0].findAll('option')
-    colorDiv = soup.findAll('select', attrs={'class' : 'single-option-selector single-option-selector-product-template product-form__input'})[1].findAll('option')
-    price = soup.find('span', attrs={'class': 'product-single__price'}).text.strip()[3:-3]
-    print('price__',price)
-    pictures = []
-    colors = []
-    size = []
-
-    for _size in sizeDiv:
-        if(_size):
-            # print('size => ',_size.text)
-            size.append(_size.text)
-    for color in colorDiv:
-        if(color):
-            # print('color => ',color['title'])
-            colors.append(color.text.strip().lower())
-    if(soup.find('div', attrs={'class': 'photos'}).findAll('img'))[1:]:
-        pictureDiv = soup.find('div', attrs={'class': 'photos'}).findAll('img')[1:]
-        for pic in pictureDiv:
-            if (pic):
-                # print('pic____',pic['src'])
-                pictures.append("https:"+pic['src'])
-
-    _productData['colors'] = colors
-    _productData['size'] = size
-    _productData['pictures'] = pictures
-    _productData['price'] = price
-    print('product data ', _productData)
-    print('................................................................................................')
-
 
 def openSitePage(brandData, type):
     for sitePage in brandData:
@@ -119,6 +77,7 @@ def processSitePageSoup(soup, brandName,gender):
                 for _size in product.find('ul' , attrs={'class' : 'sizes-list'}).findAll('li'):
                     sizes.append(_size.text.strip())
             color = colorAssignment(title.lower())
+            price = float(price.replace(',',''))
             dataObject = {
                 "id": random.choice(list(range(0, 100000))) + random.choice(list(range(77, 15400))) + random.choice(list(range(55, 5000))),
                 'name': title,
@@ -143,41 +102,47 @@ def processSitePageSoup(soup, brandName,gender):
             mydb.freshProducts.insert_one(dataObject)
 print("starting scrapping")
 
-def getAllLinks(scrapeUrl):
+def getAllLinks():
+    scrapeUrl = "https://diners.com.pk/"
     webUrl = "https://diners.com.pk/"
     driver.get(scrapeUrl)
     soup = BeautifulSoup(driver.page_source,'lxml')
-    menSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[2:12]
-    womenSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[14:25]
-    kidsSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[27:33]
-
-    for brand in menSoup:
-        # print("brand_", brand)
-        if(brand.find('a') != -1):
-            print(brand.find('a')['href'])
-            print(brand.find('a').text.strip())
-            menBrands.append(
-                        {
-                            'url': webUrl + brand.find('a')['href'],
-                            'name': brand.find('a').text.strip()
-                        })
-        print('........................................................................')
-    for brand in womenSoup:
-        # print("brand_", brand)
-        if(brand.find('a') != -1):
-            print(brand.find('a')['href'])
-            print(brand.find('a').text.strip())
-            womenBrands.append(
-                        {
-                            'url': webUrl + brand.find('a')['href'],
-                            'name': brand.find('a').text.strip()
-                        })
-        print('........................................................................')
+    # menSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[2:12]
+    # womenSoup = soup.findAll('li', attrs={'class': 'drawer__nav-item'})[14:25]
+    kidsSoupCount = soup.findAll('ul', attrs={'class': 'site-nav-dropdown'})
+    print('kids soup count ', kidsSoupCount)
+    kidsSoup1 = soup.findAll('ul', attrs={'class': 'site-nav-dropdown'})[13].findAll('li')
+    kidsSoup2 = soup.findAll('ul', attrs={'class': 'site-nav-dropdown'})[14].findAll('li')
+    kidsSoup3 = soup.findAll('ul', attrs={'class': 'site-nav-dropdown'})[15].findAll('li')
+    kidsSoup = kidsSoup1 + kidsSoup2 + kidsSoup3
+    # for brand in menSoup:
+    #     # print("brand_", brand)
+    #     if(brand.find('a') != -1):
+    #         print(brand.find('a')['href'])
+    #         print(brand.find('a').text.strip())
+    #         menBrands.append(
+    #                     {
+    #                         'url': webUrl + brand.find('a')['href'],
+    #                         'name': brand.find('a').text.strip()
+    #                     })
+    #     print('........................................................................')
+    # for brand in womenSoup:
+    #     # print("brand_", brand)
+    #     if(brand.find('a') != -1):
+    #         print(brand.find('a')['href'])
+    #         print(brand.find('a').text.strip())
+    #         womenBrands.append(
+    #                     {
+    #                         'url': webUrl + brand.find('a')['href'],
+    #                         'name': brand.find('a').text.strip()
+    #                     })
+    #     print('........................................................................')
+    print('kids soup ', kidsSoup)
     for brand in kidsSoup:
         # print("brand_", brand)
         if(brand.find('a') != -1):
-            print(brand.find('a')['href'])
-            print(brand.find('a').text.strip())
+            # print(brand.find('a')['href'])
+            # print(brand.find('a').text.strip())
             kidsBrands.append(
                         {
                             'url': webUrl + brand.find('a')['href'],
@@ -185,15 +150,18 @@ def getAllLinks(scrapeUrl):
                         })
         print('........................................................................')
     driver.close()
-    print('menBrands ', menBrands)
-    print('womenBrands ', womenBrands)
+    # print('menBrands ', menBrands)
+    # print('womenBrands ', womenBrands)
     print('kidsBrands ', kidsBrands)
 
 def startScrapping():
     # start point for scrapping all the data
     try:
-        allBrands = [{'blist': kidsBrands, 'name': 'kids'}, {'blist': womenBrands, 'name': 'women'},
-                     {'blist': menBrands, 'name': 'men'}]
+        allBrands = [
+                     {'blist': kidsBrands, 'name': 'kids'},
+                     {'blist': womenBrands, 'name': 'women'},
+                     {'blist': menBrands, 'name': 'men'}
+        ]
         for brand in allBrands:
             openSitePage(brand['blist'], brand['name'])
     except Exception as el:
@@ -203,14 +171,9 @@ def startScrapping():
 ##start point for getting all the links for men,women,kids brands urls and brand names
 
 try:
-    scrapeUrl = "https://diners.com.pk/collections/girls"
-    # getAllLinks(scrapeUrl)
+
+    # getAllLinks()
     startScrapping()
-    # _products = mydb.get_collection('products').find()
-    # for prod in _products:
-    #     print('database products ', prod)
 except Exception as el:
     print("Error opening site  ", el)
     driver.close()
-
-driver.close()
